@@ -6,9 +6,9 @@ if __name__ == '__main__':
     numArgs = len(argv)
 
     if numArgs - 1 == 0:
-        print("{} arguments.\n".format(numArgs - 1), end="")
-    elif numArgs == 1:
-        print("{} arguments:\n".format(numArgs - 1), end="")
+        print("{} argument.\n".format(numArgs - 1), end="")
+    elif numArgs - 1 == 1:
+        print("{} argument:\n".format(numArgs - 1), end="")
     else:
         print("{} arguments:\n".format(numArgs - 1), end="")
 
