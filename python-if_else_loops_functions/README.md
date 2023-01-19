@@ -40,7 +40,7 @@ This program will assign a random signed number to the variable `number` each ti
   - followed by a new line
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -91,7 +91,7 @@ This program will assign a random signed number to the variable `number` each ti
   - followed by a new line
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -141,7 +141,7 @@ Write a program that prints the ASCII alphabet, in lowercase, not followed by a 
 - You are not allowed to import any module
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -162,7 +162,7 @@ Write a program that prints the ASCII alphabet, in lowercase, not followed by a 
 - You are not allowed to import any module
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -182,7 +182,7 @@ Write a program that prints all numbers from `0` to `98` in decimal and in hexad
 - You are not allowed to import any module
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -227,7 +227,7 @@ Write a program that prints numbers from `0` to `99`.
 - You are not allowed to import any module
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -253,7 +253,7 @@ Write a program that prints all possible different combinations of two digits.
 - You are not allowed to import any module
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -277,7 +277,7 @@ Write a function that checks for lowercase character.
 You don’t need to understand `__import__`
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -316,7 +316,7 @@ Write a function that prints a string in uppercase followed by a new line.
 You don’t need to understand `__import__`
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -346,7 +346,7 @@ Write a function that prints the last digit of a number.
 You don’t need to understand `__import__`
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -377,7 +377,7 @@ Write a function that adds two integers and returns the result.
 You don’t need to understand `__import__`
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -409,7 +409,7 @@ Write a function that computes `a` to the power of `b` and return the value.
 You don’t need to understand `__import__`
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -447,7 +447,7 @@ Write a function that prints the numbers from 1 to 100 separated by a space.
 You don’t need to understand `__import__`
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -475,7 +475,7 @@ Write a program that prints the ASCII alphabet, in reverse order, alternating lo
 - You are not allowed to import any module
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -495,7 +495,7 @@ Write a function that creates a copy of the string, removing the character at th
 You don’t need to understand `__import__`
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
@@ -525,7 +525,7 @@ Python
 Write the Python function `def magic_calculation(a, b, c):` that does exactly the same as the following Python bytecode:
 
 <details>
-<summary>Test</summary>
+<summary>File Test</summary>
 <br>
 
 ```python
