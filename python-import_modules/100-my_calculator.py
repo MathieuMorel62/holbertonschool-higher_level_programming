@@ -15,7 +15,7 @@ if __name__ == '__main__':
     if operator not in "+-*/":
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
-    
+
     if operator == "+":
         print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
     elif operator == "-":
