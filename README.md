@@ -8,7 +8,7 @@
 
 ## Projects
 
-### [Python - Hello, World](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/python-hello_world)
+### [Python - Hello, World](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x00-python-hello_world)
 
 #### `General`
 
@@ -75,7 +75,7 @@
 
 -------------------------------
 
-### [Python - if/else, Loops, Functions](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions)
+### [Python - if/else, Loops, Functions](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x01-python-if_else_loops_functions)
 
 #### `General`
 
@@ -181,7 +181,7 @@ floor division // (returns the quotient of a division, rounded down to the neare
 
 ------------------------
 
-### [Python - Import & Modules](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/python-import_modules)
+### [Python - Import & Modules](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x02-python-import_modules)
 
 #### `General`
 
@@ -223,3 +223,7 @@ floor division // (returns the quotient of a division, rounded down to the neare
 </details>
 
 ---------------------------------
+
+## Author
+
+- Mathieu Morel
