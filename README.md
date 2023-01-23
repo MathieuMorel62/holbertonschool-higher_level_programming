@@ -224,6 +224,88 @@ floor division // (returns the quotient of a division, rounded down to the neare
 
 ---------------------------------
 
+### [Python - Data Structures: Lists, Tuples](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x03-python-data_structures)
+
+</details>
+<details>
+<summary>What are lists and how to use them</summary>
+<br>
+
+>
+</details>
+</details>
+<details>
+<summary>What are the differences and similarities between strings and lists</summary>
+<br>
+
+>
+</details>
+</details>
+<details>
+<summary>What are the most common methods of lists and how to use them</summary>
+<br>
+
+>
+</details>
+</details>
+<details>
+<summary>How to use lists as stacks and queues</summary>
+<br>
+
+>
+</details>
+</details>
+<details>
+<summary>What are list comprehensions and how to use them</summary>
+<br>
+
+>
+</details>
+</details>
+<details>
+<summary>What are tuples and how to use them</summary>
+<br>
+
+>
+</details>
+</details>
+<details>
+<summary>When to use tuples versus lists</summary>
+<br>
+
+>
+</details>
+</details>
+<details>
+<summary>What is a sequence</summary>
+<br>
+
+>
+</details>
+</details>
+<details>
+<summary>What is tuple packing</summary>
+<br>
+
+>
+</details>
+</details>
+<details>
+<summary>What is sequence unpacking</summary>
+<br>
+
+>
+</details>
+</details>
+<details>
+<summary>What is the del statement and how to use it</summary>
+<br>
+
+>
+</details>
+
+---------------------------------
+
 ## Author
 
 - Mathieu Morel
