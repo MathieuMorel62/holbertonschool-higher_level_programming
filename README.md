@@ -226,6 +226,8 @@ floor division // (returns the quotient of a division, rounded down to the neare
 
 ### [Python - Data Structures: Lists, Tuples](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x03-python-data_structures)
 
+#### `General`
+
 </details>
 <details>
 <summary>What are lists and how to use them</summary>
