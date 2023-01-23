@@ -1,5 +1,5 @@
 # Python - Data Structures: Lists, Tuples
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Frealpython.com%2Fpython-data-structures%2F&psig=AOvVaw12VZYwwsTblmOHibnxgR-S&ust=1674568995808000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOid-Oft3fwCFQAAAAAdAAAAABAl" width="100%">
+<img src="https://files.realpython.com/media/Python-Tricks-Chapter-on-Data-Structures_Watermarked.b5d9d86333c3.jpg" width="100%">
 
 ## Resources
 ### Read or Watch:
