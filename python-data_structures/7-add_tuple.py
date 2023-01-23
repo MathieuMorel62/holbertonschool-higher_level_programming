@@ -27,4 +27,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
         second_elem = second_elem + 0
 
     return (first_elem, second_elem)
-
