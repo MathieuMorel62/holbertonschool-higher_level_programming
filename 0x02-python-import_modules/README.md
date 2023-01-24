@@ -1,6 +1,42 @@
 # Python - import & modules
 <img src="https://files.realpython.com/media/The-Name-Main-Idiom_Watermarked.9d5e12c539b3.jpg" width="100%">
 
+## Description
+### Import and Modules in Python
+
+In Python, the `import` statement allows you to import modules, which are collections of functions, variables, and other types of data. Modules are Python files that can be used in other programs to extend the basic functionality of Python.
+  
+To use the functions and variables of a module, you must first `import` it using the import statement. For example:
+
+```python
+import math
+```
+
+Once imported, you can use the functions and variables of the module by using the module name as a prefix. For example:
+
+```python
+x = math.pi
+result = math.cos(x)
+```
+
+It is also possible to import only certain functions or variables from a module using the `from` statement:
+
+```python
+from math import pi
+x = pi
+result = math.cos(x)
+```
+
+or
+
+```python
+from math import cos, pi
+x = pi
+result = cos(x)
+```
+
+It's important to note that the use of `from module import *` is generally discouraged as it can cause naming conflicts with variables already present in the program.
+
 ## Resources
 ### Read or Watch:
 
