@@ -2,6 +2,69 @@
 
 <img src="https://files.realpython.com/media/Conditional-Statements-in-Python_Watermarked.b6b7d30ff62b.jpg" width="100%">
 
+## Description
+### if/else Statement
+
+In Python, `if/else` statements are used to check if a condition is true or false and perform actions accordingly.  
+
+For example:
+
+```python
+x = 5
+if x > 0:
+    print("x is positive")
+else:
+    print("x is negative")
+```
+
+### Loops
+
+There are two types of loops in Python: `for` loops and `while` loops. `For` loops are used to repeat actions a specific number of times, while `while` loops are used to repeat actions as long as a condition is true.  
+
+For example:
+
+```python
+# for loop
+for i in range(5):
+    print(i)
+
+# while loop
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+```
+
+## Fonctions
+
+Functions allow you to group code for reuse in an organized way. Functions are defined using the `def` statement followed by the function name and parameters in parentheses.  
+
+For example:
+
+```python
+def add(x, y):
+    return x + y
+
+result = add(3, 4)
+print(result) # prints 7
+```
+
+It's also possible to define functions with default values for certain parameters.  
+
+For example:
+
+```python
+def power(x, y=2):
+    return x ** y
+
+result = power(3) 
+print(result) # prints 9
+result = power(3, 3) 
+print(result) # prints 27
+```
+
+In summary, `if/else` statements are used to check conditions and perform actions accordingly. Loops are used to repeat actions a specific number of times or as long as a condition is true. Functions are used to group code for reuse in an organized way. They can also take parameters and return values. Functions are a powerful tool in Python as they allow for code reuse, organization, and abstraction, making it easier to understand, maintain, and extend your codebase.
+
 ## Resources
 ### Read or Watch:
 - [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html) (Read until “4.6. Defining Functions” included)
