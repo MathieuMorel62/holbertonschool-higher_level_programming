@@ -375,7 +375,7 @@ floor division // (returns the quotient of a division, rounded down to the neare
 
 -----------------------------------
 
-### [Python - Exceptions]()
+### [Python - Exceptions](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x05-python-exceptions)
 
 #### `General`
 
