@@ -6,13 +6,17 @@
 
 In Python, the `import` statement allows you to import modules, which are collections of functions, variables, and other types of data. Modules are Python files that can be used in other programs to extend the basic functionality of Python.
   
-To use the functions and variables of a module, you must first `import` it using the import statement. For example:
+To use the functions and variables of a module, you must first `import` it using the import statement.  
+
+For example:
 
 ```python
 import math
 ```
 
-Once imported, you can use the functions and variables of the module by using the module name as a prefix. For example:
+Once imported, you can use the functions and variables of the module by using the module name as a prefix.  
+
+For example:
 
 ```python
 x = math.pi
