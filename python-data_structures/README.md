@@ -1,6 +1,56 @@
 # Python - Data Structures: Lists, Tuples
 <img src="https://files.realpython.com/media/Python-Tricks-Chapter-on-Data-Structures_Watermarked.b5d9d86333c3.jpg" width="100%">
 
+## Description
+### Lists in Python
+
+Lists in Python are a data type that contains an ordered series of elements. The elements of a list can be of any type and they can be modified.
+
+To create a list, you can use square brackets [] or the built-in `list()` function:
+
+```python
+# Creating an empty list
+my_list = []
+
+# Creating a list with elements
+my_list = [1, 2, 3, 4]
+```
+
+You can add elements to a list using the `append()` method:
+
+```python
+my_list.append(5)
+```
+
+or modify them using square brackets to access a specific element:
+
+```python
+my_list[2] = 10
+```
+
+### Tuples in Python
+
+Tuples in Python are similar to lists, but they are immutable (non-modifiable) and defined using parentheses (). Tuples are often used to store data that should not be modified, such as coordinates or dates.
+
+To create a tuple, you can use parentheses ():
+
+```python
+# Creating an empty tuple
+my_tuple = ()
+
+# Creating a tuple with elements
+my_tuple = (1, 2, 3, 4)
+```
+
+It is not possible to modify an element of a tuple, if you try to do so you will get an error:
+
+```python
+# Modifying an element of a tuple (not possible)
+my_tuple[2] = 10  # raises an error
+```
+
+It's important to note that Lists and Tuples have different methods and operators. For example, Lists have an `append()` method to add elements, while Tuples do not have this method because they are immutable.
+
 ## Resources
 ### Read or Watch:
 
