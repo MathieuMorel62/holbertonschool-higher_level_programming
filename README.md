@@ -308,6 +308,122 @@ floor division // (returns the quotient of a division, rounded down to the neare
 
 ---------------------------------
 
+### [Python - More Data Structures: Set, Dictionary](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x04-python-more_data_structures)
+
+#### `General`
+
+<details>
+<summary>What are sets and how to use them</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>What are the most common methods of set and how to use them</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>When to use sets versus lists</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>How to iterate into a set</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>What are dictionaries and how to use them</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>When to use dictionaries versus lists or sets</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>What is a key in a dictionary</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>How to iterate over a dictionary</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>What is a lambda function</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>What are the map, reduce and filter functions</summary>
+<br>
+
+>
+</details>
+
+-----------------------------------
+
+### [Python - Exceptions]()
+
+#### `General`
+
+<details>
+<summary>What’s the difference between errors and exceptions</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>What are exceptions and how to use them</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>When do we need to use exceptions</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>How to correctly handle an exception</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>What’s the purpose of catching exceptions</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>How to raise a builtin exception</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>When do we need to implement a clean-up action after an exception</summary>
+<br>
+
+>
+</details>
+
+-----------------------------------
+
 ## Author
 
 - Mathieu Morel
