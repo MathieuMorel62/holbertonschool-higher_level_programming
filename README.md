@@ -233,21 +233,36 @@ floor division // (returns the quotient of a division, rounded down to the neare
 <summary>What are lists and how to use them</summary>
 <br>
 
->
+>In Python, lists are ordered collections of items which can be of any type (numbers, strings, etc.). They can be created using square brackets [] and items are separated by commas. Lists can be accessed, added, removed, and iterated through.
 </details>
 </details>
 <details>
 <summary>What are the differences and similarities between strings and lists</summary>
 <br>
 
->
+>Strings and lists are both data types in Python, but they have different characteristics.
+
+Strings are sequences of characters that cannot be modified once created. Lists are mutable collections of items of different types.
+
+Similarities are that they can both be iterated through and have methods to access their elements.
+
+In summary, strings are immutable sequences of characters, lists are mutable collections of items of different types but they can both be iterated through and have methods to access their elements.
 </details>
 </details>
 <details>
 <summary>What are the most common methods of lists and how to use them</summary>
 <br>
 
->
+>The most commonly used methods on lists in Python are:
+
+- `append()`: to add an item to the end of the list
+- `insert()`: to insert an item at a specific position
+- `remove()`: to remove an item
+- `pop()`: to remove and return the item at a specific position or at the end of the list
+- `index()`: to find the index of an item
+- `count()`: to count the number of occurrences of an item
+- `sort()`: to sort the items
+- `reverse()`: to reverse the order of the items
 </details>
 </details>
 <details>
