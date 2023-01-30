@@ -5,12 +5,12 @@
 class Square:
     """Class Square that defines a square by its size attribute."""
 
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """Instantiate a square with optional size.
-        
+
         Args:
         size (int): Size of the square. Defaults to 0.
-        
+
         Raises:
         TypeError: If size is not an integer.
         ValueError: If size is less than 0.
