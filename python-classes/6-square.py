@@ -54,9 +54,9 @@ class Square:
         Property setter to set position
         Raise TypeError if value is not a tuple of 2 positive integers
         """
-        if type(value) != tuple or len(value) != 2:
+        if not isinstance(value, tuple) or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        elif type(value[0]) != int or type(value[1]) != int:
+        elif not isinstance(value[0], int) or not isinstance(value[1], int):
             raise TypeError("position must be a tuple of 2 positive integers")
         elif value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
