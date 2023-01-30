@@ -6,6 +6,7 @@ import math
 class MagicClass:
     """ Class representing a Circle with a given radius """
     __radius = None
+
     def __init__(self, radius=0):
         """
         Initialize the Circle with a given radius.
