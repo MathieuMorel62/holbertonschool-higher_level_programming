@@ -64,3 +64,20 @@ Matrix with a single row:
     ... ]
     >>> matrix_divided(matrix, 3)
     [[0.33, 0.67, 1.0]]
+
+Inf as div passed:
+    >>> matrix = [
+    ... [1, 2, 3],
+    ... [4, 5, 6]
+    ... ]
+    >>> matrix_divided(matrix, float("inf"))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+No div passed:
+    >>> matrix = [
+    ... [1, 2, 3],
+    ... [4, 5, 6]
+    ... ]
+    >>> matrix_divided(matrix, None)
+    Traceback (most recent call last):
+    TypeError: div must be a number
