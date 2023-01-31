@@ -12,7 +12,7 @@ Return an integer: The sum of a and b numbers
 
 Importing the function:
 
-	  >>> add_integer = __import__('0-add_integer').add_integer
+	 >>> add_integer = __import__('0-add_integer').add_integer
 
 Test to realize:
 
@@ -53,3 +53,6 @@ Test to realize:
      Traceback (most recent call last):
      	       ...
      ValueError: cannot convert float NaN to integer
+
+     >>> add_integer(10)
+     108
