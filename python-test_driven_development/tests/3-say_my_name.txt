@@ -29,3 +29,7 @@ First name and last name is not a strings:
      >>> say_my_name(8, 38)
      Traceback (most recent call last):
      TypeError: first_name must be a string
+
+First name is a string:
+    >>> say_my_name("Mathieu")
+    My name is Mathieu 
