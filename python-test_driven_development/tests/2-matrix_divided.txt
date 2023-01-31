@@ -1,0 +1,66 @@
+The ``2-matrix_divided`` module
+============================
+
+Using ``matrix_divided``
+---------------------
+
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Integer division:
+	>>> matrix = [
+	...	[1, 2, 3],
+	...	[4, 5, 6]
+	... ]
+	>>> matrix_divided(matrix, 3)
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Float division:
+    >>> matrix = [
+    ... [1.0, 2.0, 3.0],
+    ... [4.0, 5.0, 6.0]
+    ... ]
+    >>> matrix_divided(matrix, 3.0)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Zero divisor error
+    >>> matrix = [
+    ... [1, 2, 3],
+    ... [4, 5, 6]
+    ... ]
+    >>> matrix_divided(matrix, 0)
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+Matrix must be a list of lists of integers/floats:
+    >>> matrix = [
+    ... [1, 2, 3],
+    ... [4, 5, "holberton"]
+    ... ]
+    >>> matrix_divided(matrix, 3)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Each row of the matrix must have the same size:
+    >>> matrix = [
+    ... [1, 2, 3],
+    ... [4, 5]
+    ... ]
+    >>> matrix_divided(matrix, 3)
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+div must be a number:
+    >>> matrix = [
+    ... [1, 2, 3],
+    ... [4, 5, 6]
+    ... ]
+    >>> matrix_divided(matrix, "holberton")
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+Matrix with a single row:
+    >>> matrix = [
+    ... [1, 2, 3]
+    ... ]
+    >>> matrix_divided(matrix, 3)
+    [[0.33, 0.67, 1.0]]
