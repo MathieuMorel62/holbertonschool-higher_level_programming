@@ -88,14 +88,9 @@ class Rectangle:
         elif rect_1.area() >= rect_2.area():
             return rect_1
         else:
-            rect_2
+            return rect_2
 
     @classmethod
     def square(cls, size=0):
         """ Returns new Rectangle instance with width == height == size """
-        if not isinstance(size, int):
-            raise TypeError("width must be an integer")
-        elif size < 0:
-            raise ValueError("width must be >= 0")
-        else:
-            return cls(size, size)
+        return cls(size, size)
