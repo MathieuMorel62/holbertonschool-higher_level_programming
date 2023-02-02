@@ -5,7 +5,7 @@
 def matrix_mul(m_a, m_b):
     """
     This function multiplies 2 matrices.
-    
+
     Args:
         m_a (list): A matrix as a list of lists containing integers or floats.
         m_b (list): A matrix as a list of lists containing integers or floats.
@@ -36,6 +36,6 @@ def matrix_mul(m_a, m_b):
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
 
-    result = [[sum(a * b for a, b in zip(row_a, col_b)) \
-        for col_b in zip(*m_b)] for row_a in m_a]
+    result = [[sum(a * b for a, b in zip(row_a, col_b))
+               for col_b in zip(*m_b)] for row_a in m_a]
     return result
