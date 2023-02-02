@@ -1,4 +1,4 @@
-# Python - if/else, loops, functions
+# <p align=center>Python - if/else, loops, functions</p>
 
 <img src="https://files.realpython.com/media/Conditional-Statements-in-Python_Watermarked.b6b7d30ff62b.jpg" width="100%">
 
