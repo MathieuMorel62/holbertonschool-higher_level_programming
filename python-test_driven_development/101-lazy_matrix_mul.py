@@ -5,7 +5,8 @@
 import numpy as np
 
 def lazy_matrix_mul(m_a, m_b):
+    """ multiplies 2 matrices """
     try:
-        return np.dot(m_a, m_b).tolist()
+        return repr(np.matmul(m_a, m_b))
     except ValueError as e:
-        raise ValueError("matrices are not aligned")
+        raise ValueError("Error: Scalar operands are not allowed, use '*' instead")
