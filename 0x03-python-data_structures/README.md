@@ -1,4 +1,4 @@
-# Python - Data Structures: Lists, Tuples
+# <p align=center>Python - Data Structures: Lists, Tuples</p>
 <img src="https://files.realpython.com/media/Python-Tricks-Chapter-on-Data-Structures_Watermarked.b5d9d86333c3.jpg" width="100%">
 
 ## Description
