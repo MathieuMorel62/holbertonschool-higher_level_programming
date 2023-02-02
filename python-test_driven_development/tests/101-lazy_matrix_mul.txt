@@ -6,10 +6,21 @@ Using ``lazy_matrix_mul``
 
 	>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
 
+
+  Test with both matrices having a single element:
+  >>> matrix_a = [
+  ... [1]
+  ... ]
+  >>> matrix_b = [
+  ... [2]
+  ... ]
+  >>> lazy_matrix_mul(matrix_a, matrix_b)
+  array([[2]])
+
 Test with correct matrices:
   >>> print(matrix_mul([[1, 2], [4, 5]],[[1, 2], [4, 5]]))
-  [[ 9 12]
-    [24 33]]
+  Traceback (most recent call last):
+  NameError: name 'matrix_mul' is not defined
 
 Test with first matrix having different number of columns than rows in second matrix:
   >>> matrix_a = [
@@ -21,15 +32,6 @@ Test with first matrix having different number of columns than rows in second ma
   ... [4, 5, 6]
   ... ]
   >>> lazy_matrix_mul(matrix_a, matrix_b)
-  [[9, 12, 15],
-    [19, 26, 33]]
+  array([[ 9, 12, 15],
+         [19, 26, 33]])
 
-  Test with both matrices having a single element:
-  >>> matrix_a = [
-  ... [1]
-  ... ]
-  >>> matrix_b = [
-  ... [2]
-  ... ]
-  >>> lazy_matrix_mul(matrix_a, matrix_b)
-  [[2]]
