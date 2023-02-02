@@ -1,4 +1,4 @@
-# Python - import & modules
+# <p align=center>Python - import & modules</p>
 <img src="https://files.realpython.com/media/The-Name-Main-Idiom_Watermarked.9d5e12c539b3.jpg" width="100%">
 
 ## Description
