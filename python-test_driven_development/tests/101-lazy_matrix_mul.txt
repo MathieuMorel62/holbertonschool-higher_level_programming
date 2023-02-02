@@ -101,3 +101,8 @@ Test with incorrect matrices:
   >>> lazy_matrix_mul(matrix_a, matrix_b)
   Traceback (most recent call last):
   ValueError: setting an array element with a sequence.
+
+Checking matrix with empty rows :
+  >>> print(matrix_mul([],[[1, 2], [4, 5]]))
+  Traceback (most recent call last):
+  NameError: name 'matrix_mul' is not defined
