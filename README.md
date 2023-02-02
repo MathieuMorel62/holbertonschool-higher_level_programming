@@ -1,4 +1,4 @@
-# Holbertonschool Higher Level Programming Project
+# <p align=center>Holbertonschool Higher Level Programming Project</p>
 <img src="https://www.actuia.com/wp-content/uploads/2022/01/logopython.png" width="100%">
 
 ## Description
