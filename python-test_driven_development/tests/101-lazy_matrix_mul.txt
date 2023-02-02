@@ -35,3 +35,38 @@ Test with first matrix having different number of columns than rows in second ma
   array([[ 9, 12, 15],
          [19, 26, 33]])
 
+Test with invalid input:
+  >>> matrix_a = 'abc'
+  >>> matrix_b = [[1, 2], [4, 5]]
+  >>> lazy_matrix_mul(matrix_a, matrix_b)
+  Traceback (most recent call last):
+  ValueError: Scalar operands are not allowed, use '*' instead
+
+Test with first matrix having different number of columns than rows in second matrix:
+  >>> matrix_a = [
+  ... [1, 2],
+  ... [3, 4]
+  ... ]
+  >>> matrix_b = [
+  ... [1, 2, 3],
+  ... [4, 5, 6]
+  ... ]
+  >>> lazy_matrix_mul(matrix_a, matrix_b)
+  array([[ 9, 12, 15],
+         [19, 26, 33]])
+
+Test with correct matrices:
+  >>> print(matrix_mul([[1, 2], [4, 5]],[[1, 2], [4, 5]]))
+  Traceback (most recent call last):
+  NameError: name 'matrix_mul' is not defined
+
+Test with second matrix being string:
+  >>> matrix_a = [[1, 2], [3, 4]]
+  >>> matrix_b = "not a list"
+  >>> lazy_matrix_mul(matrix_a, matrix_b)
+  Traceback (most recent call last):
+  ValueError: Scalar operands are not allowed, use '*' instead
+
+
+
+
