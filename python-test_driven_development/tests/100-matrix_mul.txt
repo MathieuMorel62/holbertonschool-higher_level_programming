@@ -144,3 +144,33 @@ Test with a list of lists of numbers and a list of lists of non-numbers:
     >>> matrix_mul(matrix_a, matrix_b)
     Traceback (most recent call last):
     TypeError: m_b should contain only integers or floats
+
+Test matrix_b is not a list:
+    >>> matrix_a = [
+    ... [1, 2, 3],
+    ... [4, 5, 6]
+    ... ]
+    >>> matrix_b = "not a list"
+    >>> matrix_mul(matrix_a, matrix_b)
+    Traceback (most recent call last):
+    TypeError: m_b must be a list
+
+Test matrix_a must be a list of lists:
+    >>> matrix_a = [1, 2, 3]
+    >>> matrix_b = [
+    ... [1, 2],
+    ... [3, 4]
+    ... ]
+    >>> matrix_mul(matrix_a, matrix_b)
+    Traceback (most recent call last):
+    TypeError: m_a must be a list of lists
+
+Test matrix_b must be a list of lists:
+    >>> matrix_a = [
+    ... [1, 2, 3],
+    ... [4, 5, 6]
+    ... ]
+    >>> matrix_b = [1, 2, 3]
+    >>> matrix_mul(matrix_a, matrix_b)
+    Traceback (most recent call last):
+    TypeError: m_b must be a list of lists
