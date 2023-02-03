@@ -9,8 +9,9 @@
 ## Projects
 
 ### [Python - Hello, World](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x00-python-hello_world)
-
 #### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
 
 <details>
 <summary>Why Python programming is awesome</summary>
@@ -76,8 +77,9 @@
 -------------------------------
 
 ### [Python - if/else, Loops, Functions](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x01-python-if_else_loops_functions)
-
 #### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
 
 <details>
 <summary>Why indentation is so important in Python</summary>
@@ -182,8 +184,9 @@ floor division // (returns the quotient of a division, rounded down to the neare
 ------------------------
 
 ### [Python - Import & Modules](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x02-python-import_modules)
-
 #### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
 
 <details>
 <summary>How to import functions from another file</summary>
@@ -225,8 +228,9 @@ floor division // (returns the quotient of a division, rounded down to the neare
 ---------------------------------
 
 ### [Python - Data Structures: Lists, Tuples](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x03-python-data_structures)
-
 #### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
 
 <details>
 <summary>What are lists and how to use them</summary>
@@ -326,8 +330,9 @@ my_list = [expression for item in iterable if condition]
 ---------------------------------
 
 ### [Python - More Data Structures: Set, Dictionary](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x04-python-more_data_structures)
-
 #### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
 
 <details>
 <summary>What are sets and how to use them</summary>
@@ -403,8 +408,9 @@ You can also use the set method .items() to obtain a set view of the elements th
 -----------------------------------
 
 ### [Python - Exceptions](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x05-python-exceptions)
-
 #### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
 
 <details>
 <summary>What’s the difference between errors and exceptions</summary>
@@ -452,6 +458,128 @@ You can also raise an exception without any argument, like this : "raise ValueEr
 </details>
 
 -----------------------------------
+
+### [Python - Classes And Objects](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x06-python-classes)
+#### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
+
+<details>
+<summary>What is OOP</summary>
+<br>
+
+>OOP stands for Object-Oriented Programming, a programming paradigm based on the concept of "objects", which can contain data and code that manipulates the data.
+</details>
+<details>
+<summary>“first-class everything”</summary>
+<br>
+
+>The term "first-class everything" in Python means that functions, classes, and objects are treated as first-class citizens. This means that they can be assigned to variables, passed as arguments to functions, and returned as values from functions, just like any other data type.
+</details>
+<details>
+<summary>What is a class</summary>
+<br>
+
+>In Python, a class is a blueprint for creating objects (a particular data structure), providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods).
+</details>
+<details>
+<summary>What is an object and an instance</summary>
+<br>
+
+>An object is an instance of a class and is created by calling the class as if it were a function. An instance is a specific occurrence of an object.
+</details>
+<details>
+<summary>What is the difference between a class and an object or instance</summary>
+<br>
+
+>The difference between a class and an object or instance is that a class is a blueprint for creating objects, while an object or instance is a specific occurrence of a class.
+</details>
+<details>
+<summary>What is an attribute</summary>
+<br>
+
+>An attribute is a value that is associated with an object or a class. It can be a variable or a function that belongs to an object or a class.
+</details>
+<details>
+<summary>What are and how to use public, protected and private attributes</summary>
+<br>
+
+>Public, protected, and private attributes in Python are determined by the naming convention. Attributes that start with an underscore are considered private, while those with two underscores are considered protected. Attributes that don't have any underscores are public.
+</details>
+<details>
+<summary>What is self</summary>
+<br>
+
+>The self parameter in a method is a reference to the instance of the object that the method is called on. It is used to access the attributes and methods of the class.
+</details>
+<details>
+<summary>What is a method</summary>
+<br>
+
+>A method is a function that is associated with an object or a class. It is used to define the behavior of an object or a class.
+</details>
+<details>
+<summary>What is the special __init__ method and how to use it</summary>
+<br>
+
+>The special init method is a constructor method that is called when an object is created from a class. It is used to initialize the attributes of an object.
+</details>
+<details>
+<summary>What is Data Abstraction, Data Encapsulation, and Information Hiding</summary>
+<br>
+
+>Data Abstraction refers to the ability of an object to hide its internal details from the outside world and only reveal the necessary information. Data Encapsulation refers to the wrapping of data and functions into a single unit. Information Hiding refers to the practice of keeping the implementation details of a class hidden from the user.
+</details>
+<details>
+<summary>What is a property</summary>
+<br>
+
+>A property in Python is a special kind of attribute that provides a way to access and manipulate an object's attributes in a more convenient way.
+</details>
+<details>
+<summary>What is the difference between an attribute and a property in Python</summary>
+<br>
+
+>The difference between an attribute and a property in Python is that an attribute is a basic variable or function, while a property provides a way to access and manipulate an object's attributes in a more convenient way.
+</details>
+<details>
+<summary>What is the Pythonic way to write getters and setters in Python</summary>
+<br>
+
+>The Pythonic way to write getters and setters in Python is to use the @property and @<attribute>.setter decorators.
+</details>
+<details>
+<summary>How to dynamically create arbitrary new attributes for existing instances of a class</summary>
+<br>
+
+>You can dynamically create arbitrary new attributes for existing instances of a class by simply assigning a value to a new attribute name.
+</details>
+<details>
+<summary>How to bind attributes to object and classes</summary>
+<br>
+
+>Attributes can be bound to object and classes by using the self keyword in methods within a class or by using the setattr function.
+</details>
+<details>
+<summary>What is the __dict__ of a class and/or instance of a class and what does it contain</summary>
+<br>
+
+>The dict of a class and/or instance of a class contains the attributes and methods of the class or instance as key-value pairs.
+</details>
+<details>
+<summary>How does Python find the attributes of an object or class</summary>
+<br>
+
+>Python finds the attributes of an object or class by searching the object's namespace and its class's namespace. If it doesn't find the attribute in either namespace, it will raise an AttributeError.
+</details>
+<details>
+<summary>How to use the getattr function</summary>
+<br>
+
+>The getattr function is used in Python to access an object's attributes, even if the attribute name is not known until runtime. The function takes two arguments: the object and the name of the attribute as a string. If the attribute exists, its value is returned. If the attribute doesn't exist, a default value can be returned or an AttributeError can be raised.
+</details>
+
+----------------------------
 
 ## Author
 
