@@ -73,7 +73,7 @@ It's important to note that Lists and Tuples have different methods and operator
 
 # Tasks
 
-#### [0. Print a List Of Integers](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/0-print_list_integer.py)
+### [0. Print a List Of Integers](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/0-print_list_integer.py)
 Write a function that prints all integers of a list.
 
 Prototype: `def print_list_integer(my_list=[]):`
@@ -107,7 +107,7 @@ mathieu@ubuntu:~/$ ./0-main.py
 
 ---------------------------
 
-#### [1. Secure Access To An Element In a List](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/1-element_at.py)
+### [1. Secure Access To An Element In a List](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/1-element_at.py)
 Write a function that retrieves an element from a list like in C.
 
 - Prototype: `def element_at(my_list, idx):`
@@ -137,7 +137,7 @@ Element at index 3 is 4
 
 --------------------------
 
-#### [2. Replace Element](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/2-replace_in_list.py)
+### [2. Replace Element](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/2-replace_in_list.py)
 Write a function that replaces an element of a list at a specific position (like in C).
 
 - Prototype: `def replace_in_list(my_list, idx, element):`
@@ -172,7 +172,7 @@ mathieu@ubuntu:~/$ ./2-main.py
 
 --------------------------
 
-#### [3. Print a List Of Integers... In Reverse!](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/3-print_reversed_list_integer.py)
+### [3. Print a List Of Integers... In Reverse!](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/3-print_reversed_list_integer.py)
 Write a function that prints all integers of a list, in reverse order.
 
 - Prototype: `def print_reversed_list_integer(my_list=[]):`
@@ -206,7 +206,7 @@ mathieu@ubuntu:~/$ ./3-main.py
 
 ---------------------------
 
-#### [4. Replace In a Copy](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/4-new_in_list.py)
+### [4. Replace In a Copy](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/4-new_in_list.py)
 Write a function that replaces an element in a list at a specific position without modifying the original list (like in C).
 
 - Prototype: `def new_in_list(my_list, idx, element):`
@@ -241,7 +241,7 @@ mathieu@ubuntu:~/$ ./4-main.py
 
 -----------------------------------
 
-#### [5. Can You C Me Now?](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/5-no_c.py)
+### [5. Can You C Me Now?](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/5-no_c.py)
 Write a function that removes all characters `c` and `C` from a string.
 
 - Prototype: `def no_c(my_string):`
@@ -272,7 +272,7 @@ hiago
 
  --------------------------
 
- #### [6. Lists Of Lists = Matrix](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/6-print_matrix_integer.py)
+ ### [6. Lists Of Lists = Matrix](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/6-print_matrix_integer.py)
  Write a function that prints a matrix of integers.
 
 - Prototype: `def print_matrix_integer(matrix=[[]]):`
@@ -313,7 +313,7 @@ $
 
 ------------------------------
 
-#### [7. Tuples Addition](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/7-add_tuple.py)
+### [7. Tuples Addition](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/7-add_tuple.py)
 Write a function that adds 2 tuples.
 
 - Prototype: `def add_tuple(tuple_a=(), tuple_b=()):`
@@ -352,7 +352,7 @@ mathieu@ubuntu:~/$ ./7-main.py
 
 ----------------------------
 
-#### [8. More Returns!](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/8-multiple_returns.py)
+### [8. More Returns!](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/8-multiple_returns.py)
 Write a function that returns a tuple with the length of a string and its first character.
 
 - Prototype: `def multiple_returns(sentence):`
@@ -380,7 +380,7 @@ Length: 22 - First character: A
 
 ----------------------------------
 
-#### [9. Find The Max](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/9-max_integer.py)
+### [9. Find The Max](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/9-max_integer.py)
 Write a function that finds the biggest integer of a list.
 
 - Prototype: `def max_integer(my_list=[]):`
@@ -410,7 +410,7 @@ Max: 90
 
 --------------------------------
 
-#### [10. Only By 2](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/10-divisible_by_2.py)
+### [10. Only By 2](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/10-divisible_by_2.py)
 Write a function that finds all multiples of 2 in a list.
 
 - Prototype: `def divisible_by_2(my_list=[]):`
@@ -449,7 +449,7 @@ mathieu@ubuntu:~/$ ./10-main.py
 
 -----------------------------
 
-#### [11. Delete At](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/11-delete_at.py)
+### [11. Delete At](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/11-delete_at.py)
 Write a function that deletes the item at a specific position in a list.
 
 - Prototype: `def delete_at(my_list=[], idx=0):`
@@ -481,7 +481,7 @@ mathieu@ubuntu:~/$ ./11-main.py
 
 ----------------------------
 
-#### [12. Switch](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/12-switch.py)
+### [12. Switch](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x03-python-data_structures/12-switch.py)
 Complete the source code in order to switch value of `a` and `b`
 
 - You can find the source code [here](https://github.com/hs-hq/0x03.py/blob/main/12-switch_py)

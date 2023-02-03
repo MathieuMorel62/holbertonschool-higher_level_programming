@@ -44,7 +44,7 @@ By using exceptions, you can prevent your program from abruptly stopping in case
 
 # Tasks
 
-#### [0. Safe List Printing](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/0-safe_print_list.py)
+### [0. Safe List Printing](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/0-safe_print_list.py)
 Write a function that prints `x` elements of a list.
 
 - Prototype: `def safe_print_list(my_list=[], x=0):`
@@ -88,7 +88,7 @@ nb_print: 5
 
 ----------------------------
 
-#### [1. Safe Printing Of An Integers List](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/1-safe_print_integer.py)
+### [1. Safe Printing Of An Integers List](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/1-safe_print_integer.py)
 Write a function that prints an integer with `"{:d}".format()`.
 
 - Prototype: `def safe_print_integer(value):`
@@ -135,7 +135,7 @@ School is not an integer
 
 --------------------------------
 
-#### [2. Print And Count Integers](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/2-safe_print_list_integers.py)
+### [2. Print And Count Integers](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/2-safe_print_list_integers.py)
 Write a function that prints the first `x` elements of a list and only integers.
 
 - Prototype: `def safe_print_list_integers(my_list=[], x=0):`
@@ -188,7 +188,7 @@ IndexError: list index out of range
 
 -----------------------------------
 
-#### [3. Integers Division With Debug](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/3-safe_print_division.py)
+### [3. Integers Division With Debug](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/3-safe_print_division.py)
 Write a function that divides 2 integers and prints the result.
 
 - Prototype: `def safe_print_division(a, b):`
@@ -229,7 +229,7 @@ Inside result: None
 
 -------------------------------
 
-#### [4. Divide a List](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/4-list_division.py)
+### [4. Divide a List](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/4-list_division.py)
 Write a function that divides element by element 2 lists.
 
 - Prototype: `def list_division(my_list_1, my_list_2, list_length):`
@@ -280,7 +280,7 @@ out of range
 
 ----------------------------
 
-#### [5. Raise Exception](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/5-raise_exception.py)
+### [5. Raise Exception](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/5-raise_exception.py)
 Write a function that raises a type exception.
 
 - Prototype: `def raise_exception():`
@@ -308,7 +308,7 @@ Exception raised
 
 ----------------------------
 
-#### [6. Raise a Message](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/6-raise_exception_msg.py)
+### [6. Raise a Message](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/6-raise_exception_msg.py)
 Write a function that raises a name exception with a message.
 
 - Prototype: `def raise_exception_msg(message=""):`
@@ -336,7 +336,7 @@ C is fun
 
 ------------------------
 
-#### [7. Safe Integer Print With Error Message](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/100-safe_print_integer_err.py)
+### [7. Safe Integer Print With Error Message](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/100-safe_print_integer_err.py)
 Write a function that prints an integer.
 
 - Prototype: `def safe_print_integer_err(value):`
@@ -389,7 +389,7 @@ School is not an integer
 
 -----------------------------------
 
-#### [8. Safe Function](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/101-safe_function.py)
+### [8. Safe Function](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/101-safe_function.py)
 Write a function that executes a function safely.
 
 - Prototype: `def safe_function(fct, *args):`
@@ -453,7 +453,7 @@ result of print_list: None
 
 ---------------------------------
 
-#### [9. ByteCode -> Python #4](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/102-magic_calculation.py)
+### [9. ByteCode -> Python #4](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x05-python-exceptions/102-magic_calculation.py)
 Write the Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:
 
 <details>

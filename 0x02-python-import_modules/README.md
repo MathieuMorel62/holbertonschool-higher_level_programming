@@ -61,7 +61,7 @@ It's important to note that the use of `from module import *` is generally disco
 --------------------------------
 # Tasks
 
-#### [0. Import a Simple Function From a Simple File](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/0-add.py)
+### [0. Import a Simple Function From a Simple File](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/0-add.py)
 Write a program that imports the function `def add(a, b):` from the file `add_0.py` and prints the result of the addition `1 + 2 = 3`
 
 - You have to use `print` function with string format to display integers
@@ -105,7 +105,7 @@ __import__("0-add")
 
 ----------------------------
 
-#### [1. My First Toolbox!](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/1-calculation.py)
+### [1. My First Toolbox!](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/1-calculation.py)
 Write a program that imports functions from the file `calculator_1.py`, does some Maths, and prints the result.
 
 - Do not use the function `print` (with string format to display integers) more than 4 times
@@ -188,7 +188,7 @@ mathieu@ubuntu:~/$ ./1-calculation.py
 
 --------------------------
 
-#### [2. How To Make a Script Dynamic!](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/2-args.py)
+### [2. How To Make a Script Dynamic!](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/2-args.py)
 Write a program that prints the number of and the list of its arguments.
 
 - The output should be:
@@ -226,7 +226,7 @@ mathieu@ubuntu:~/$ ./2-args.py Hello Welcome To The Best School
 
 ---------------------------
 
-#### [3. Infinite Addition](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/3-infinite_add.py)
+### [3. Infinite Addition](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/3-infinite_add.py)
 Write a program that prints the result of the addition of all arguments
 
 - The output should be the result of the addition of all arguments, followed by a new line
@@ -251,7 +251,7 @@ mathieu@ubuntu:~/$ ./3-infinite_add.py 79 10 -40 -300 89
 
 --------------------------
 
-#### [4. Who Are You?](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/4-hidden_discovery.py)
+### [4. Who Are You?](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/4-hidden_discovery.py)
 Write a program that prints all the names defined by the compiled module [hidden_4.pyc](https://github.com/hs-hq/0x02.py/raw/main/hidden_4.pyc) (please download it locally).
 
 - You should print one name per line, in alpha order
@@ -275,7 +275,7 @@ print_school
 
 -------------------------
 
-#### [5. Everything Can Be Imported](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/5-variable_load.py)
+### [5. Everything Can Be Imported](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/5-variable_load.py)
 Write a program that imports the variable `a` from the file `variable_load_5.py` and prints its value.
 
 - You are not allowed to use `*` for importing or `__import__`
@@ -300,7 +300,7 @@ mathieu@ubuntu:~/$ ./5-variable_load.py
 
 -----------------------
 
-#### [6. Build My Own Calculator!](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/100-my_calculator.py)
+### [6. Build My Own Calculator!](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/100-my_calculator.py)
 Write a program that imports all functions from the file `calculator_1.py` and handles basic operations.
 
 - Usage: `./100-my_calculator.py a operator b`
@@ -395,7 +395,7 @@ Unknown operator. Available operators: +, -, * and /
 
 ----------------------------
 
-#### [7. Easy Print](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/101-easy_print.py)
+### [7. Easy Print](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/101-easy_print.py)
 Write a program that prints `#pythoniscool`, followed by a new line, in the standard output.
 
 - Your program should be maximum 2 lines long
@@ -413,7 +413,7 @@ mathieu@ubuntu:~/$ ./101-easy_print.py
 
 --------------------------
 
-#### [8. ByteCode -> Python #3](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/102-magic_calculation.py)
+### [8. ByteCode -> Python #3](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/102-magic_calculation.py)
 Write the Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:
 
 <details>
@@ -475,7 +475,7 @@ Write the Python function `def magic_calculation(a, b):` that does exactly the s
 
 ---------------------------
 
-#### [9. Fast Alphabet](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/103-fast_alphabet.py)
+### [9. Fast Alphabet](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x02-python-import_modules/103-fast_alphabet.py)
 Write a program that prints the alphabet in uppercase, followed by a new line.
 
 - Your program should be maximum 3 lines long

@@ -63,7 +63,7 @@ It's important to note that dictionaries are unordered, so the order of elements
 
 # Tasks
 
-#### [0. Squared Simple](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/0-square_matrix_simple.py)
+### [0. Squared Simple](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/0-square_matrix_simple.py)
 Write a function that computes the square value of all integers of a matrix.
 
 - Prototype: `def square_matrix_simple(matrix=[]):`
@@ -103,7 +103,7 @@ mathieu@ubuntu:~/$ ./0-main.py
 
 ------------------------------------------
 
-#### [1. Search And Replace](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/1-search_replace.py)
+### [1. Search And Replace](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/1-search_replace.py)
 Write a function that replaces all occurrences of an element by another in a new list.
 
 - Prototype: `def search_replace(my_list, search, replace):`
@@ -136,7 +136,7 @@ mathieu@ubuntu:~/$ ./1-main.py
 
 ------------------------------
 
-#### [2. Unique Addition](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/2-uniq_add.py)
+### [2. Unique Addition](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/2-uniq_add.py)
 Write a function that adds all unique integers in a list (only once for each integer).
 
 - Prototype: `def uniq_add(my_list=[]):`
@@ -163,7 +163,7 @@ Result: 15
 
 -------------------
 
-#### [3. Present In Both](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/3-common_elements.py)
+### [3. Present In Both](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/3-common_elements.py)
 Write a function that returns a set of common elements in two sets.
 
 - Prototype: `def common_elements(set_1, set_2):`
@@ -191,7 +191,7 @@ mathieu@ubuntu:~/$ ./3-main.py
 
 --------------------------------
 
-#### [4. Only Differents](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/4-only_diff_elements.py)
+### [4. Only Differents](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/4-only_diff_elements.py)
 Write a function that returns a set of all elements present in only one set.
 
 - Prototype: `def only_diff_elements(set_1, set_2):`
@@ -219,7 +219,7 @@ mathieu@ubuntu:~/$ ./4-main.py
 
 -----------------------------------
 
-#### [5. Number Of Keys](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/5-number_keys.py)
+### [5. Number Of Keys](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/5-number_keys.py)
 Write a function that returns the number of keys in a dictionary.
 
 - Prototype: `def number_keys(a_dictionary):`
@@ -246,7 +246,7 @@ Number of keys: 3
 
 ----------------------------
 
-#### [6. Print Sorted Dictionary](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/6-print_sorted_dictionary.py)
+### [6. Print Sorted Dictionary](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/6-print_sorted_dictionary.py)
 Write a function that prints a dictionary by ordered keys.
 
 - Prototype: `def print_sorted_dictionary(a_dictionary):`
@@ -279,7 +279,7 @@ track: Low level
 
 ---------------------------------
 
-#### [7. Update Dictionary](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/7-update_dictionary.py)
+### [7. Update Dictionary](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/7-update_dictionary.py)
 Write a function that replaces or adds key/value in a dictionary.
 
 - Prototype: `def update_dictionary(a_dictionary, key, value):`
@@ -338,7 +338,7 @@ track: Low level
 
 --------------------------------
 
-#### [8. Simple Delete By Key](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/8-simple_delete.py)
+### [8. Simple Delete By Key](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/8-simple_delete.py)
 Write a function that deletes a key in a dictionary.
 
 - Prototype: `def simple_delete(a_dictionary, key=""):`
@@ -393,7 +393,7 @@ language: C
 
 -----------------------------------
 
-#### [9. Multiply By 2](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/9-multiply_by_2.py)
+### [9. Multiply By 2](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/9-multiply_by_2.py)
 Write a function that returns a new dictionary with all values multiplied by 2
 
 - Prototype: `def multiply_by_2(a_dictionary):`
@@ -436,7 +436,7 @@ Molly: 32
 
 ------------------------------------
 
-#### [10. Best Score](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/10-best_score.py)
+### [10. Best Score](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/10-best_score.py)
 Write a function that returns a key with the biggest integer value.
 
 - Prototype: `def best_score(a_dictionary):`
@@ -470,7 +470,7 @@ Best score: None
 
 ------------------------------------
 
-#### [11. Multiply By Using Map](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/11-multiply_list_map.py)
+### [11. Multiply By Using Map](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/11-multiply_list_map.py)
 Write a function that returns a list with all values multiplied by a number without using any loops.
 
 - Prototype: `def multiply_list_map(my_list=[], number=0):`
@@ -505,7 +505,7 @@ mathieu@ubuntu:~/$ ./11-main.py
 
 --------------------------
 
-#### [12. Roman To Integer](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/12-roman_to_int.py)
+### [12. Roman To Integer](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/12-roman_to_int.py)
 **Technical interview preparation:**
 
 - You are not allowed to google anything
@@ -555,7 +555,7 @@ DCCVII = 707
 
 -----------------------------
 
-#### [13. Weighted Average!](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/100-weight_average.py)
+### [13. Weighted Average!](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/100-weight_average.py)
 Write a function that returns the weighted average of all integers tuple `(<score>, <weight>)`
 
 - Prototype: `def weight_average(my_list=[]):`
@@ -584,7 +584,7 @@ Average: 2.80
 
 ---------------------------------
 
-#### [14. Squared By Using Map](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/101-square_matrix_map.py)
+### [14. Squared By Using Map](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/101-square_matrix_map.py)
 Write a function that computes the square value of all integers of a matrix using `map`
 
 - Prototype: `def square_matrix_map(matrix=[]):`
@@ -627,7 +627,7 @@ mathieu@ubuntu:~/$ ./101-main.py
 
 -----------------------------
 
-#### [15. Delete By Value](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/102-complex_delete.py)
+### [15. Delete By Value](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x04-python-more_data_structures/102-complex_delete.py)
 Write a function that deletes keys with a specific value in a dictionary.
 
 - Prototype: def complex_delete(a_dictionary, value):

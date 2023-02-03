@@ -91,7 +91,7 @@ Read or watch the below resources in the order presented.
 
 --------------------------
 
-## Tasks
+# Tasks
 
 ### [0. My First Square](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x06-python-classes/0-square.py)
 Write an empty class `Square` that defines a square:

@@ -79,7 +79,7 @@ Namespaces are one honking great idea -- let's do more of those!
 
 # Tasks
 
-#### [0. Run Python File](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/0-run)
+### [0. Run Python File](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/0-run)
 Write a Shell script that runs a Python script.
 
 The Python file name will be saved in the environment variable `$PYFILE`
@@ -101,7 +101,7 @@ Best School
 
 -----------------------
 
-#### [1. Run Inline](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/1-run_inline)
+### [1. Run Inline](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/1-run_inline)
 Write a Shell script that runs Python code.
 
 The Python code will be saved in the environment variable `$PYCODE`
@@ -120,7 +120,7 @@ Best School: 98
 
 -------------------------
 
-#### [2. Hello, Print](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/2-print.py)
+### [2. Hello, Print](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/2-print.py)
 Write a Python script that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line.
 
 - Use the function `print`
@@ -137,7 +137,7 @@ mathieu@ubuntu:~/py/$ ./2-print.py
 
 --------------------
 
-#### [3. Print Integer](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/3-print_number.py)
+### [3. Print Integer](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/3-print_number.py)
 Complete this [source code](https://github.com/hs-hq/0x00.py/blob/main/3-print_number.py) in order to print the integer stored in the variable `number`, followed by `Battery street`, followed by a new line.
 
 - You can find the source code [here](https://github.com/hs-hq/0x00.py/blob/main/3-print_number.py)
@@ -160,7 +160,7 @@ mathieu@ubuntu:~/py/0x00$ ./3-print_number.py
   
 -----------------------------
 
-#### [4. Print Float](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/4-print_float.py)
+### [4. Print Float](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/4-print_float.py)
 Complete the source code in order to print the float stored in the variable `number` with a precision of 2 digits.
 
 - You can find the source code [here](https://github.com/hs-hq/0x00.py/blob/main/4-print_float.py)
@@ -182,7 +182,7 @@ Float: 3.14
 
 --------------------------
 
-#### [5. Print String](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/5-print_string.py)
+### [5. Print String](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/5-print_string.py)
 Complete this [source code](https://github.com/hs-hq/0x00.py/blob/main/5-print_string.py) in order to print 3 times a string stored in the variable `str`, followed by its first 9 characters.
 
 - You can find the source code [here](https://github.com/hs-hq/0x00.py/blob/main/5-print_string.py)
@@ -207,7 +207,7 @@ Holberton
 
 -----------------------
 
-#### [6. Play With Strings](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/6-concat.py)
+### [6. Play With Strings](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/6-concat.py)
 Complete this [source code](https://github.com/hs-hq/0x00.py/blob/main/6-concat.py) to print `Welcome to Holberton School!`
 
 - You can find the source code [here](https://github.com/hs-hq/0x00.py/blob/main/6-concat.py)
@@ -230,7 +230,7 @@ mathieu@ubuntu:~/py/$ wc -l 6-concat.py
 
 ----------------------------
 
-#### [7. Copy - Cut - Paste](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/7-edges.py)
+### [7. Copy - Cut - Paste](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/7-edges.py)
 Complete this [source code](https://github.com/hs-hq/0x00.py/blob/main/7-edges.py)
 
 - You can find the source code [here](https://github.com/hs-hq/0x00.py/blob/main/7-edges.py)
@@ -257,7 +257,7 @@ mathieu@ubuntu:~/py/$ wc -l 7-edges.py
 
 --------------------
 
-#### [8. Create a New Sentence](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/8-concat_edges.py)
+### [8. Create a New Sentence](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/8-concat_edges.py)
 Complete this [source code](https://github.com/hs-hq/0x00.py/blob/main/8-concat_edges.py) to print `object-oriented programming with Python`, followed by a new line.
 
 - You can find the source code [here](https://github.com/hs-hq/0x00.py/blob/main/8-concat_edges.py)
@@ -281,7 +281,7 @@ mathieu@ubuntu:~/py/$ wc -l 8-concat_edges.py
 
 --------------------------
 
-#### [9. Easter Egg](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/9-easter_egg.py)
+### [9. Easter Egg](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/9-easter_egg.py)
 Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
 
 - Your script should be maximum 98 characters long (please check with `wc -m 9-easter_egg.py`)
@@ -318,7 +318,7 @@ Namespaces are one honking great idea -- let's do more of those!
 
 ---------------------------
 
-#### [10. Hello, Write](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/100-write.py)
+### [10. Hello, Write](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/100-write.py)
 Write a Python script that prints exactly `and that piece of art is useful - Dora Korpar, 2015-10-19`, followed by a new line.
 
 - Use the function `write` from the `sys` module
@@ -345,7 +345,7 @@ and that piece of art is useful - Dora Korpar, 2015-10-19
 
 --------------------------
 
-#### [11. Compile](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/101-compile)
+### [11. Compile](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/101-compile)
 Write a script that compiles a Python script file.
 
 The Python file name will be stored in the environment variable `$PYFILE`
@@ -386,7 +386,7 @@ mathieu@ubuntu:~/py/$ od -t x1 main.pyc # SYSTEM DEPENDANT => CAN BE DIFFERENT
 
 -------------------------
 
-#### [12. ByteCode -> Python #1](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/102-magic_calculation.py)
+### [12. ByteCode -> Python #1](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x00-python-hello_world/102-magic_calculation.py)
 Write the Python function `def magic_calculation(a, b):` that does exactly the same as the following Python bytecode:
 
 <details>
