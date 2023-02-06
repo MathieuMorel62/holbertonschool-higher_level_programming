@@ -46,3 +46,26 @@ Test: integer_validator with string input:
     >>> bg.integer_validator("my_int", "Holberton")
     Traceback (most recent call last):
     TypeError: my_int must be an integer
+
+Test: integer_validator with value less than or equal to zero:
+    >>> bg.integer_validator("age", 0)
+    Traceback (most recent call last):
+    ValueError: age must be greater than 0
+
+Test: check integer_validator with tuple input:
+    >>> bg.integer_validator("age", (4,))
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+Test: Validate Integer Value for age:
+    >>> bg.integer_validator("age", True)
+
+Test: Validate the Input is not a Set:
+    >>> bg.integer_validator("age", {3, 4})
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+Titre: integer_validator with None:
+    >>> bg.integer_validator("age", None)
+    Traceback (most recent call last):
+    TypeError: age must be an integer
