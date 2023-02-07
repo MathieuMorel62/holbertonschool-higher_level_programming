@@ -37,6 +37,7 @@ class Rectangle(BaseGeometry):
         """ Return rectangle description """
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
 
+
 class Square(Rectangle):
     """ Init class square """
     def __init__(self, size):
