@@ -3,7 +3,7 @@
 
 
 def pascal_triangle(n):
-    """ 
+    """
     This function generates the Pascal triangle to line n.
     If n is smaller or equal to 0, returns an empty list.
 
