@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Contrary class of integer """
 
 
 class MyInt(int):
