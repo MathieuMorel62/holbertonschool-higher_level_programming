@@ -3,26 +3,33 @@
 import sys
 
 
-status_counts = {}
 total_size = 0
+status_count = {
+    200: 0,
+    301: 0,
+    400: 0,
+    401: 0,
+    403: 0,
+    404: 0,
+    405: 0,
+    500: 0
+}
 line_count = 0
 
-for log_line in sys.stdin:
-    split_line = log_line.split()
-    status = split_line[-2]
-    total_size += int(split_line[-1])
+try:
+    for line in sys.stdin:
+        line_count += 1
+        elements = line.split()
+        total_size += int(elements[-1])
+        status_count[int(elements[-2])] += 1
 
-    if status in status_counts:
-        status_counts[status] += 1
-    else:
-        status_counts[status] = 1
-
-    line_count += 1
-    if line_count == 10:
-        sorted_keys = sorted(status_counts.keys())
-        print("Total size:", total_size)
-
-        for key in sorted_keys:
-            print("{}: {}".format(key, status_counts[key]))
-        line_count = 0
-        continue
+        if line_count % 10 == 0:
+            print("File size: {}".format(total_size))
+            for status_code in sorted(status_count.keys()):
+                if status_count[status_code] > 0:
+                    print("{}: {}".format(status_code, status_count[status_code]))
+except KeyboardInterrupt:
+    print("File size: {}".format(total_size))
+    for status_code in sorted(status_count.keys()):
+        if status_count[status_code] > 0:
+            print("{}: {}".format(status_code, status_count[status_code]))
