@@ -23,9 +23,6 @@ try:
         # Split the line by space to get the fields
         fields = line.split()
 
-        if len(fields) < 5:
-            continue
-
         # Get the status code and file size
         status_code = int(fields[-2])
         file_size = int(fields[-1])
