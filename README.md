@@ -733,7 +733,248 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 </details>
 
 ---------------------------
-  
+### [Python - Everything Is Object](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x09-python-everything_is_object)
+#### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
+
+<details>
+<summary>What is an object</summary>
+<br>
+
+>An object in programming is a specific instance of a data structure defined by a class. It contains data and behavior (methods) that operate on that data. Objects are the fundamental building blocks of object-oriented programming (OOP).
+</details>
+<details>
+<summary>What is the difference between a class and an object or instance</summary>
+<br>
+
+>A class is a blueprint for creating objects. It defines the properties and behaviors that objects of that class will have. An object, also known as an instance, is a specific realization of a class. For example, if you have a class for creating a dog, then each dog you create would be an instance of that class.
+</details>
+<details>
+<summary>What is the difference between immutable object and mutable object</summary>
+<br>
+
+>An `immutable object` is an object whose state cannot be changed after it is created. For example, a string in Python is an immutable object because once you create a string, you cannot change the characters in it. On the other hand, a `mutable object` is an object whose state can be changed after it is created. For example, a list in Python is a mutable object because you can add, remove, or change elements in a list after it is created.
+</details>
+<details>
+<summary>What is a reference</summary>
+<br>
+
+>A reference is a value that refers to an object in memory. It is a way to access the object and its data. In Python, variables are references to objects.
+</details>
+<details>
+<summary>What is an assignment</summary>
+<br>
+
+>An assignment is the process of assigning a value to a variable. In Python, you use the equal sign (=) to perform an assignment. For example: `x = 5` assigns the value 5 to the variable `x`.
+</details>
+<details>
+<summary>What is an alias</summary>
+<br>
+
+>An alias is a second reference to an existing object. If two variables refer to the same object, they are said to be aliases of each other.
+</details>
+<details>
+<summary>How to know if two variables are identical</summary>
+<br>
+
+>To know if two variables are identical, you can use the `is` operator in Python. The is operator returns `True` if the variables refer to the same object, and `False` otherwise. For example: `x is y` returns `True` if `x` and `y` refer to the same object.
+</details>
+<details>
+<summary>How to know if two variables are linked to the same object</summary>
+<br>
+
+>To know if two variables are linked to the same object, you can use the `==` operator in Python. The `==` operator returns `True` if the objects referred to by the variables have the same value, and `False` otherwise. For example: `x == y` returns `True` if the values of `x` and `y` are equal.
+</details>
+<details>
+<summary>How to display the variable identifier (which is the memory address in the CPython implementation)</summary>
+<br>
+
+>To display the variable identifier (memory address) in CPython, you can use the built-in `id()` function. For example: `id(x)` returns the memory address of the object referred to by `x`.
+</details>
+<details>
+<summary>What is mutable and immutable</summary>
+<br>
+
+>Mutable and immutable are terms used to describe the state of an object. An immutable object is one whose state cannot be changed after it is created, while a mutable object is one whose state can be changed after it is created.
+</details>
+<details>
+<summary>What are the built-in mutable types</summary>
+<br>
+
+>The built-in mutable types in Python include lists, dictionaries, sets, and bytearrays.
+</details>
+<details>
+<summary>What are the built-in immutable types</summary>
+<br>
+
+>The built-in immutable types in Python include numbers (integers, floating-point numbers, and complex numbers), strings, tuples, and frozensets.
+</details>
+<details>
+<summary>How does Python pass variables to functions</summary>
+<br>
+
+>In Python, variables are passed to functions by reference. This means that when a function receives a variable, it receives a reference to the object referred to by that variable. If the function modifies the object, the changes will be visible outside the function as well. If you want to pass an object to a function such that the function cannot modify it, you should pass an immutable object.
+</details>
+
+--------------------------
+### [Python - Inheritance](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x0A-python-inheritance)
+#### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
+
+<details>
+<summary>What is a superclass, baseclass or parentclass</summary>
+<br>
+
+>A superclass, baseclass, or parentclass is a higher-level class from which other classes inherit attributes and methods. In other words, a subclass inherits from its parent class.
+</details>
+<details>
+<summary>What is a subclass</summary>
+<br>
+
+>A subclass is a lower-level class that inherits attributes and methods from a parent class (also known as a superclass or baseclass). The subclass can add or override attributes and methods of the parent class.
+</details>
+<details>
+<summary>How to list all attributes and methods of a class or instance</summary>
+<br>
+
+>To list all attributes and methods of a class or instance, you can use the built-in `dir()` function in Python. For example, `dir(ClassName)` will return a list of all attributes and methods of the class `ClassName`. To list the attributes and methods of an instance, you can simply use `dir(instance)`.
+</details>
+<details>
+<summary>When can an instance have new attributes</summary>
+<br>
+
+>An instance can have new attributes at any time. You can add new attributes to an instance simply by assigning a value to a new attribute name. For example, `instance.new_attribute = value` adds a new attribute `new_attribute` to the instance with the value `value`.
+</details>
+<details>
+<summary>How to inherit class from another</summary>
+<br>
+
+>To inherit a class from another, you use the syntax `class SubclassName(ParentClassName)` in Python. The subclass inherits all attributes and methods from the parent class.
+</details>
+<details>
+<summary>How to define a class with multiple base classes</summary>
+<br>
+
+>To define a class with multiple base classes, you use multiple parent classes in the parentheses when defining the class. For example: `class SubclassName(ParentClass1, ParentClass2, ParentClass3)`. The subclass inherits attributes and methods from all parent classes.
+</details>
+<details>
+<summary>What is the default class every class inherit from</summary>
+<br>
+
+>Every class in Python implicitly inherits from the `object` class. The `object` class is the root of the class hierarchy in Python, and all classes inherit from it by default.
+</details>
+<details>
+<summary>How to override a method or attribute inherited from the base class</summary>
+<br>
+
+>To override a method or attribute in a subclass, simply declare a new method or attribute with the same name in the subclass. The new method or attribute in the subclass will overwrite or replace the original method or attribute defined in the parent class. This allows the subclass to have its own implementation of a method or attribute, while still inheriting the rest of the attributes and methods from the parent class.
+</details>
+<details>
+<summary>Which attributes or methods are available by heritage to subclasses</summary>
+<br>
+
+>All attributes and methods that are defined in a parent class are available for use by subclasses. Subclasses can access these attributes and methods using the dot operator, for example `Subclass.attribute` or `Subclass.method().`
+</details>
+<details>
+<summary>What is the purpose of inheritance</summary>
+<br>
+
+>The purpose of inheritance is to allow a subclass to inherit attributes and methods from a parent class, thus avoiding the need to rewrite the same code in multiple classes. Inheritance allows you to create a hierarchy of classes, where lower-level classes inherit attributes and methods from higher-level classes, making it easier to reuse code and create more specialized classes.
+</details>
+<details>
+<summary>What are, when and how to use isinstance, issubclass, type and super built-in functions</summary>
+<br>
+
+>The built-in functions `isinstance()`, `issubclass()`, `type()`, and `super()` are used for testing the type
+</details>
+
+------------------------------
+### [Python - Input/Output](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x0B-python-input_output)
+#### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
+
+<details>
+<summary>How to open a file</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>How to write text in a file</summary>
+<br>
+
+>To open a file in Python, you can use the built-in `open()` function. This function takes the file name as an argument and returns a file object that you can use to read or write the file. Here's an example:
+
+```python
+file = open("example.txt", "r") # open the file for reading
+```
+</details>
+<details>
+<summary>How to read the full content of a file</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>How to read a file line by line</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>How to move the cursor in a file</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>How to make sure a file is closed after using it</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>What is and how to use the with statement</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>What is JSON</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>What is serialization</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>What is deserialization</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>How to convert a Python data structure to a JSON string</summary>
+<br>
+
+>
+</details>
+<details>
+<summary>How to convert a JSON string to a Python data structure</summary>
+<br>
+
+>
+</details>
+
+------------------------------
+
 ## Author
 
 - Mathieu Morel
