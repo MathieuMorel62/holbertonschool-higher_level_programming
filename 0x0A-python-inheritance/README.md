@@ -328,6 +328,7 @@ Write a class `BaseGeometry` (based on [6-base_geometry.py](https://github.com/M
   - if `value` is not an integer: raise a `TypeError` exception, with the message `<name> must be an integer`
   - if `value` is less or equal to 0: raise a `ValueError` exception with the message `<name> must be greater than 0`
 - You are not allowed to import any module
+- [Test: text files](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/blob/main/0x0A-python-inheritance/tests/7-base_geometry.txt)
 
 <details>
 <summary>File Test</summary>
