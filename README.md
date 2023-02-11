@@ -29,13 +29,13 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>Who is Guido van Rossum</summary>
 <br>
 
->Guido van Rossum is a Dutch programmer and the creator of the Python programming language. He has been actively involved in the development of Python since its creation.
+>Guido van Rossum is a Dutch programmer who is best known as the creator of the Python programming language. He created Python in the late 1980s and released it in 1991.
 </details>
 <details>
 <summary>Where does the name "Python" come from</summary>
 <br>
 
->The name "Python" was inspired by Monty Python, a British comedy group.
+>The name "Python" was inspired by the Monty Python's Flying Circus comedy series. Guido van Rossum is a fan of Monty Python, and he chose the name as a reference to the humor and absurdity in the series.
 </details>
 <details>
 <summary>What is the Zen of Python</summary>
@@ -53,13 +53,13 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>How to print text and variables using "print"</summary>
 <br>
 
->To print text and variables using print in Python, you can use the print() function. To print a variable, simply pass the variable as an argument to the print function.
+>To print text and variables using print in Python, you can use the `print()` function. You can pass one or more expressions as arguments to the function, and it will print the result to the console.
 </details>
 <details>
 <summary>How to use strings</summary>
 <br>
 
->In Python, strings are sequences of characters and are defined by enclosing characters in quotes, either single or double. They can be manipulated using various string methods and operators.
+>Strings in Python are sequences of characters, and they are represented using quotes (either single or double). You can use operators such as `+` and `*` to concatenate and repeat strings, respectively.
 </details>
 <details>
 <summary>What are indexing and slicing in Python</summary>
@@ -71,7 +71,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What is the official Python coding style and how to check your code with "pycodestyle"</summary>
 <br>
 
->The official Python coding style is known as PEP 8 and is a set of guidelines for writing readable, maintainable, and consistent code. You can check your code against PEP 8 using the pycodestyle tool.
+>The official coding style for Python is called PEP 8 (Python Enhancement Proposal 8), and it provides guidelines for writing clear, readable, and consistent code. You can use the `pycodestyle` tool to check your code against the PEP 8 style guide.
 </details>
 
 -------------------------------
@@ -91,85 +91,89 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>How to use the if, if ... else statements</summary>
 <br>
 
->The if statement is used in Python to execute code only if a certain condition is met. The if...else statement is used to execute different code blocks depending on whether the condition is met or not.
+>The `if` statement is used in Python to execute code only if a certain condition is met. The `if...else` statement is used to execute different code blocks depending on whether the condition is met or not.
 </details>
 <details>
 <summary>How to use comments</summary>
 <br>
 
->In Python, comments are lines of text that are ignored by the interpreter and are used to explain the code for human readers. Comments start with a pound (#) symbol.
+>In Python, you can add comments to your code by using the `#` symbol. Anything after the `#` symbol on a line is treated as a comment and ignored by the interpreter.
 </details>
 <details>
 <summary>How to affect values to variables</summary>
 <br>
 
->Variables in Python are assigned values using the equal sign (=). For example, `x = 10` assigns the value 10 to the variable x.
+>Variables in Python are assigned values using the equal sign (=). For example assigns the value 10 to the variable x.
+
+```python
+x = 10
+```
 </details>
 <details>
 <summary>How to use the "while" and "for" loops</summary>
 <br>
 
->The while loop is used in Python to repeat a block of code as long as a condition is met. The for loop is used to iterate over a sequence, such as a list or a range of numbers, and execute a block of code for each element in the sequence.
+>The `while` loop is used in Python to repeat a block of code as long as a condition is met. The `for` loop is used to iterate over a sequence, such as a list or a range of numbers, and execute a block of code for each element in the sequence.
 </details>
 <details>
 <summary>How is Python’s for different from "C"?</summary>
 <br>
 
->Python's for loop is different from C's for loop in that it can iterate over any sequence, such as lists, tuples, and ranges, and doesn't require an explicit counter.
+>Python's `for` loop is different from C's in that it can be used to iterate over any iterable object, not just arrays. In Python, the `for` loop automatically iterates over the items in a sequence, making it a more convenient and readable way to loop over data compared to C's `for` loop.
 </details>
 <details>
 <summary>How to use the "break" and "continues" statements</summary>
 <br>
 
->The break statement is used to exit a loop early, while the continue statement is used to skip the current iteration of the loop and move on to the next one.
+>The `break` statement is used to exit a loop early, while the `continue` statement is used to skip the current iteration of the loop and move on to the next one.
 </details>
 <details>
 <summary>How to use "else" clauses on loops</summary>
 <br>
 
->The else clause on a loop can be used to execute code after the loop has completed, but only if the loop completed normally (i.e. not with a break statement).
+>The `else` clause on a loop can be used to execute code after the loop has completed, but only if the loop completed normally (i.e. not with a `break` statement).
 </details>
 <details>
 <summary>What does the "pass" statement do, and when to use it</summary>
 <br>
 
->The pass statement is a placeholder statement in Python and does nothing. It is used when a statement is required syntactically, but no action is required.
+>The `pass` statement is a placeholder statement in Python and does nothing. It is used when a statement is required syntactically, but no action is required.
 </details>
 <details>
 <summary>How to use "range"</summary>
 <br>
 
->The range function is used to generate a sequence of numbers, which can be used as the input for a for loop.
+>The `range` function generates a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number. You can use the `range` function in combination with the `for` loop to execute a block of code a specified number of times.
 </details>
 <details>
 <summary>What is a function and how do you use functions</summary>
 <br>
 
->A function in Python is a reusable block of code that takes inputs and returns an output. Functions are defined using the def keyword and can be called by their name.
+>A function in Python is a named block of code that can be executed by calling its name and passing arguments, if necessary. Functions can be used to encapsulate code that performs a specific task, making your code more modular and easier to maintain.
 </details>
 <details>
 <summary>What does return a function that does not use any "return" statement</summary>
 <br>
 
->A function that does not use a return statement returns None.
+>A function that does not use a `return` statement returns `None`.
 </details>
 <details>
 <summary>Scope of variables</summary>
 <br>
 
->The scope of a variable refers to the part of the program where the variable can be accessed. In Python, variables have either local or global scope.
+>The scope of a variable refers to the region of the code in which it is defined and accessible. Variables defined inside a function have local scope, while variables defined outside of any function have global scope.
 </details>
 <details>
 <summary>What’s a traceback</summary>
 <br>
 
->A traceback is a record of the functions that were called leading up to an error. It is displayed as a stack trace and is used to help diagnose the cause of an error.
+>A traceback is an error message that is generated when an exception occurs in your code. The traceback provides information about the error, including the location in the code where the error occurred and a description of the error.
 </details>
 <details>
 <summary>What are the arithmetic operators and how to use them</summary>
 <br>
 
->The arithmetic operators in Python include + (addition), - (subtraction), * (multiplication), / (division), // (floor division), % (modulus), ** (exponentiation), and others. These operators can be used to perform mathematical operations on variables and values in Python.
+>The arithmetic operators in Python include `+` (addition), `-` (subtraction), `*` (multiplication), `/` (division), `//` (floor division), `%` (modulus), `**` (exponentiation), and others. These operators can be used to perform mathematical operations on variables and values in Python.
 </details>
 
 ------------------------
@@ -183,7 +187,13 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>How to import functions from another file</summary>
 <br>
 
->To import functions from another file in Python, you can use the `import` statement followed by the name of the module you want to import. For example, to import a function named `my_function` from a file named `my_module.py`, you would write `import my_module` and then use `my_module.my_function()` to call the function.
+>You can use the `import` statement to import functions from another file in Python. For example, if you have a file `my_functions.py` containing some functions and you want to import them into your main script, you can do it like this and You can then use the functions defined in the `my_functions.py` file in your main script by prefixing them with the name of the module, for example:
+
+```python
+import my_functions
+
+my_functions.my_function()
+```
 </details>
 <details>
 <summary>How to use imported functions</summary>
@@ -195,25 +205,43 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>How to create a module</summary>
 <br>
 
->To create a module in Python, simply create a new .py file with the desired code and functions. Then, the functions can be imported into other Python scripts by using the `import` statement, as described above.
+>A module in Python is simply a Python file with a `.py` extension that contains some functions or variables. To create a module, simply create a new file with the desired name and write your functions or variables in that file. You can then import that file into other scripts to make use of its contents.
 </details>
 <details>
 <summary>How to use the built-in function dir()</summary>
 <br>
 
->The built-in function `dir()` in Python can be used to see a list of all the names (attributes) defined in an object, including functions and variables. For example, you can call `dir(module_name)` to see a list of all the functions and variables defined in a module.
+>The `dir()` function is a built-in function in Python that returns a list of all the attributes and methods of a given object. For example, you can use `dir()` to find out all the attributes and methods of a module:
+
+```python
+import my_module
+print(dir(my_module))
+```
+
 </details>
 <details>
 <summary>How to prevent code in your script from being executed when imported</summary>
 <br>
 
->To prevent code in your script from being executed when imported, use an `if __name__ == "__main__":` statement around your code. This code will only be executed when the script is run directly and not when it is imported.
+>When a Python script is imported as a module into another script, any code at the top-level of that script will be executed. To prevent this, you can use the following code at the top-level of your script:
+
+```python
+if __name__ == "__main__":
+    # code to be executed only when the script is run, not imported
+```
 </details>
 <details>
 <summary>How to use command line arguments with your Python programs</summary>
 <br>
 
->To use command line arguments with your Python programs, you can use the `sys.argv` list, which contains the command line arguments passed to the script. For example, if you want to access the first argument passed to your script, you would use `sys.argv[1]`. You can import the `sys` module by writing `import sys` at the top of your script.
+>You can use the sys.argv list to access command line arguments in your Python program. For example:
+
+```python
+import sys
+
+print("Number of arguments: ", len(sys.argv))
+print("Argument List: ", str(sys.argv))
+```
 </details>
 
 ---------------------------------
@@ -227,7 +255,11 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What are lists and how to use them</summary>
 <br>
 
->Lists in Python are ordered collections of items, which can be of any data type (e.g. strings, integers, objects, etc.). Lists are created using square brackets `[ ]` and items are separated by commas. For example, `my_list = [1, 2, 3]` creates a list of integers.
+>Lists are a data structure in Python that are used to store an ordered collection of items, which can be of different data types such as integers, floating point numbers, strings, and other objects. Lists are defined using square brackets `[ ]` and items are separated by commas.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+```
 </details>
 <details>
 <summary>What are the differences and similarities between strings and lists</summary>
@@ -239,7 +271,47 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What are the most common methods of lists and how to use them</summary>
 <br>
 
->Lists have many built-in methods for manipulating and accessing their items, such as `append()`, `insert()`, `remove()`, `pop()`, `index()`, and `count()`. For example, you can append an item to a list using `my_list.append(4)`, and you can access an item at a specific index using `my_list[0]` (which returns the first item in the list).
+>Some of the most commonly used methods in lists are:
+
+- `append()`: Adds an item to the end of the list.
+
+```python
+fruits = ["apple", "banana"]
+fruits.append("cherry")
+print(fruits)
+```
+
+- `insert()`: Adds an item at a specified index.
+
+```python
+fruits = ["apple", "banana"]
+fruits.insert(1, "cherry")
+print(fruits)
+```
+
+- `extend()`: Adds multiple items to the end of the list.
+
+```python
+fruits = ["apple", "banana"]
+fruits.extend(["cherry", "date"])
+print(fruits)
+```
+
+- `remove()`: Removes the first item with the specified value.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+fruits.remove("banana")
+print(fruits)
+```
+
+- `pop()`: Removes the item at the specified index (if no index is specified, it removes and returns the last item).
+
+```python
+fruits = ["apple", "banana", "cherry"]
+fruits.pop(1)
+print(fruits)
+```
 </details>
 <details>
 <summary>How to use lists as stacks and queues</summary>
@@ -251,13 +323,31 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What are list comprehensions and how to use them</summary>
 <br>
 
->List comprehensions are a concise way to create new lists based on existing lists. For example, the following list comprehension creates a new list with the squares of the numbers in an existing list: `squared_numbers = [x**2 for x in my_list]`.
+>List comprehensions are a concise way to create lists in Python. They provide a compact and readable way to generate lists based on existing lists. In the below example, a new list squared is created, containing the squares of the numbers from 1 to 10.
+
+```python
+squared = [x**2 for x in range(1, 11)]
+print(squared) 
+
+# Output:
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+```
 </details>
 <details>
 <summary>What are tuples and how to use them</summary>
 <br>
 
->Tuples are similar to lists, but they are immutable and can be thought of as read-only lists. Tuples are created using parentheses `( )` instead of square brackets `[ ]`, and items are separated by commas. For example, `my_tuple = (1, 2, 3)` creates a tuple of integers.
+>Tuples are similar to lists in Python, but they are immutable, meaning their values cannot be changed once created. Tuples are defined using parentheses `( )` and items are separated by commas.
+
+```python
+point = (2, 3)
+print(point[0])
+print(point[1])
+
+# Output: 
+2
+3
+```
 </details>
 <details>
 <summary>When to use tuples versus lists</summary>
@@ -275,19 +365,47 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What is tuple packing</summary>
 <br>
 
->Tuple packing is the process of creating a tuple by grouping together multiple items. For example, `my_tuple = 1, 2, 3` creates a tuple of integers.
+>Tuple packing is a process of grouping values together into a single tuple. In Python, you can create a tuple by placing values separated by commas inside parentheses.
+
+```python
+point = 2, 3
+print(point) 
+
+# Output:
+(2, 3)
+```
 </details>
 <details>
 <summary>What is sequence unpacking</summary>
 <br>
 
->Sequence unpacking is the process of extracting the items in a sequence and assigning them to separate variables. For example, `a, b, c = my_tuple` assigns the first item in `my_tuple` to `a`, the second item to `b`, and the third item to `c`.
+>Sequence unpacking is the opposite of tuple packing. It is a process of extracting values from a sequence and assigning them to variables.
+
+```python
+point = (2, 3)
+x, y = point
+print(x)
+print(y)
+
+# Output: 
+2
+3
+```
 </details>
 <details>
 <summary>What is the 'del' statement and how to use it</summary>
 <br>
 
->The `del` statement in Python can be used to delete variables or items from a collection. For example, `del my_list[0]` deletes the first item in the list `my_list`.
+>The `del` statement is used to delete objects in Python, such as variables, lists, and parts of lists. In the below example, the `del` statement is used to delete the item at index 1 (`"banana"`) from the list `fruits`.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+del fruits[1]
+print(fruits) 
+
+# Output:
+["apple", "cherry"]
+```
 </details>
 
 ---------------------------------
@@ -302,12 +420,30 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <br>
 
 >Sets are collection data types in Python that are unordered and unchangeable. To use sets, you can create a set by enclosing a comma-separated list of elements in curly braces `{ }` or use the `set()` function.
+
+```python
+fruits = {"apple", "banana", "cherry"}
+print("banana" in fruits) 
+
+# Output:
+True
+```
 </details>
 <details>
 <summary>What are the most common methods of set and how to use them</summary>
 <br>
 
->The most common methods of sets include `union()`, `intersection()`, `difference()`, `add()`, `remove()`, and `clear()`.
+>The most common methods of sets include `union()`: Returns a set that contains all elements from both sets, `intersection()`: Returns a set that contains only elements that are common to both sets, `difference()`: Returns a set that contains elements that are in the first set but not in the second set, `add()`: Adds an element to a set, `remove()`: Removes an element from a set.
+
+```python
+fruits = {"apple", "banana", "cherry"}
+fruits.add("orange")
+fruits.remove("banana")
+print(fruits) 
+
+# Output:
+{'apple', 'cherry', 'orange'}
+```
 </details>
 <details>
 <summary>When to use sets versus lists</summary>
@@ -320,12 +456,31 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <br>
 
 >To iterate into a set, you can use a for loop.
+
+```python
+fruits = {"apple", "banana", "cherry"}
+for fruit in fruits:
+    print(fruit)
+
+# output: 
+apple
+banana
+cherry
+```
 </details>
 <details>
 <summary>What are dictionaries and how to use them</summary>
 <br>
 
->Dictionaries are collections of key-value pairs in Python. To use dictionaries, you can create a dictionary using curly braces `{ }` and colons to separate keys from values.
+>Dictionaries are unordered collections of key-value pairs in Python. They are defined using curly braces `{ }` or the `dict()` constructor.
+
+```python
+person = {'name': 'John', 'age': 32, 'city': 'New York'}
+print(person['name']) 
+
+# Output:
+'John'
+```
 </details>
 <details>
 <summary>When to use dictionaries versus lists or sets</summary>
@@ -343,19 +498,68 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>How to iterate over a dictionary</summary>
 <br>
 
->To iterate over a dictionary, use the `items()` method or loop through the keys using the `keys()` method and access the values using the keys as index.
+>You can iterate over a dictionary using the `items()` method, which returns a view of the dictionary's key-value pairs.
+
+```python
+person = {'name': 'John', 'age': 32, 'city': 'New York'}
+for key, value in person.items():
+    print(key + ": " + str(value))
+
+# output:
+name: John
+age: 32
+city: New York
+```
 </details>
 <details>
 <summary>What is a lambda function</summary>
 <br>
 
->A lambda function is a small anonymous function in Python, often used as an inline function. It can take any number of arguments but can only have one expression.
+>Lambda functions are anonymous functions in Python, meaning they are functions without a name. They are defined using the lambda keyword.
+
+```python
+squared = lambda x: x**2
+```
 </details>
 <details>
 <summary>What are the map, reduce and filter functions</summary>
 <br>
 
->The `map()`, `reduce()`, and `filter()` functions are built-in Python functions that are used to manipulate lists. The `map()` function applies a given function to each item in a list. The `reduce()` function applies a given function to the items of a list to produce a single output. The `filter()` function filters the elements of a list based on a given function.
+>The functions are built-in Python functions that are used to manipulate lists.
+
+- `map()`: The `map()` function applies a function to each item in an iterable and returns a new iterable.
+
+```python
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = list(map(lambda x: x**2, numbers))
+print(squared_numbers) 
+
+# Output: 
+[1, 4, 9, 16, 25]
+```
+
+- `reduce()`: The `reduce()` function applies a function to the items in an iterable in a cumulative way, reducing the iterable to a single value.
+
+```python
+from functools import reduce
+numbers = [1, 2, 3, 4, 5]
+product = reduce(lambda x, y: x * y, numbers)
+print(product) 
+
+# Output: 
+120
+```
+
+- `filter()`: The `filter()` function filters elements from an iterable based on a given condition and returns a new iterable.
+
+```python
+numbers = [1, 2, 3, 4, 5]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers) 
+
+# Output: 
+[2, 4]
+```
 </details>
 
 -----------------------------------
@@ -375,7 +579,14 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What are exceptions and how to use them</summary>
 <br>
 
->Exceptions are events that change the normal flow of a program and require specific action to be taken. They can be `raised` using the raise keyword and can be caught using the `try` and `except` blocks.
+>Exceptions are errors that occur at runtime, and they interrupt the normal flow of execution. In Python, exceptions are handled using a `try` and `except` block.
+
+```python
+try:
+   # code that may raise an exception
+except ExceptionType as e:
+   # code to handle the exception
+```
 </details>
 <details>
 <summary>When do we need to use exceptions</summary>
@@ -387,7 +598,15 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>How to correctly handle an exception</summary>
 <br>
 
->To correctly handle an exception, we should wrap the code that might raise an exception in a `try` block and provide an `except` block to handle the exception. The `except` block should specify which exception it is handling and provide the necessary action to be taken.
+>To correctly handle an exception, you should catch it in a `try` block and provide a corresponding `except` block that will handle the exception. It is important to only catch exceptions that you know how to handle and to provide appropriate error messages to the user.
+
+```python
+try:
+   # code that may raise an exception
+except ExceptionType as e:
+   # code to handle the exception
+   print("An error has occurred:", e)
+```
 </details>
 <details>
 <summary>What’s the purpose of catching exceptions</summary>
@@ -399,13 +618,26 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>How to raise a builtin exception</summary>
 <br>
 
->To raise a built-in exception, we can use the `raise` keyword followed by the type of the exception and an optional message. For example, `raise ValueError("Invalid value")`.
+>You can raise a built-in exception using the `raise` keyword. For example, to raise a `ValueError` exception, you can use the following code:
+
+```python
+raise ValueError("Invalid value")
+```
 </details>
 <details>
 <summary>When do we need to implement a clean-up action after an exception</summary>
 <br>
 
->We need to implement a clean-up action after an exception if there are any resources, such as files or connections, that need to be closed or released regardless of whether an exception occurs. This can be done using a `finally` block, which will run after the `try` block and any `except` blocks.
+>Sometimes you need to perform a clean-up action after an exception has been raised. This can be achieved by using a `finally` block. The code in the `finally` block will be executed regardless of whether an exception was raised or not.
+
+```python
+try:
+   # code that may raise an exception
+except ExceptionType as e:
+   # code to handle the exception
+finally:
+   # code to perform the clean-up action
+```
 </details>
 
 -----------------------------------
@@ -425,7 +657,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>“first-class everything”</summary>
 <br>
 
->The term "first-class everything" in Python means that functions, classes, and objects are treated as first-class citizens. This means that they can be assigned to variables, passed as arguments to functions, and returned as values from functions, just like any other data type.
+>In programming, the term "first-class" refers to an entity that can be treated as a value in the same way as a primitive data type like an integer or string. In the context of OOP, "first-class everything" means that objects, classes, and functions are all treated as first-class entities.
 </details>
 <details>
 <summary>What is a class</summary>
@@ -443,25 +675,25 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What is the difference between a class and an object or instance</summary>
 <br>
 
->The difference between a class and an object or instance is that a class is a blueprint for creating objects, while an object or instance is a specific occurrence of a class.
+>A class is a blueprint for creating objects, while an object is a specific instance of a class. A class defines the attributes and methods of an object, but it is not a concrete entity. An object, on the other hand, is a concrete entity that has a specific set of attributes and methods.
 </details>
 <details>
 <summary>What is an attribute</summary>
 <br>
 
->An attribute is a value that is associated with an object or a class. It can be a variable or a function that belongs to an object or a class.
+>An attribute is a piece of data that is associated with an object. It can be thought of as a property or a characteristic of an object. In OOP, attributes are typically stored as member variables within a class.
 </details>
 <details>
 <summary>What are and how to use public, protected and private attributes</summary>
 <br>
 
->Public, protected, and private attributes in Python are determined by the naming convention. Attributes that start with an underscore are considered private, while those with two underscores are considered protected. Attributes that don't have any underscores are public.
+>`Public attributes` can be accessed from anywhere. The `Protected attributes` can be accessed only within the class or by a subclass. They are denoted by a single underscore (`_`) before the attribute name. The `Private attributes` are intended for internal use and can only be accessed within the class. They are denoted by two underscores (`__`) before the attribute name.
 </details>
 <details>
 <summary>What is self</summary>
 <br>
 
->The self parameter in a method is a reference to the instance of the object that the method is called on. It is used to access the attributes and methods of the class.
+>The `self` parameter in a method is a reference to the instance of the object that the method is called on. It is used to access the attributes and methods of the class.
 </details>
 <details>
 <summary>What is a method</summary>
@@ -473,61 +705,126 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What is the special __init__ method and how to use it</summary>
 <br>
 
->The special init method is a constructor method that is called when an object is created from a class. It is used to initialize the attributes of an object.
+>The `__init__` method is a special method that is automatically called when an object is created from a class. It is used to initialize the attributes of an object.
+
+```python
+class MyClass:
+    def __init__(self, attr1, attr2):
+        self.attr1 = attr1
+        self.attr2 = attr2
+```
 </details>
 <details>
 <summary>What is Data Abstraction, Data Encapsulation, and Information Hiding</summary>
 <br>
 
->Data Abstraction refers to the ability of an object to hide its internal details from the outside world and only reveal the necessary information. Data Encapsulation refers to the wrapping of data and functions into a single unit. Information Hiding refers to the practice of keeping the implementation details of a class hidden from the user.
+>`Data Abstraction` refers to the ability of an object to hide its internal details from the outside world and only reveal the necessary information. `Data Encapsulation` refers to the wrapping of data and functions into a single unit. `Information Hiding` refers to the practice of keeping the implementation details of a class hidden from the user.
 </details>
 <details>
 <summary>What is a property</summary>
 <br>
 
->A property in Python is a special kind of attribute that provides a way to access and manipulate an object's attributes in a more convenient way.
+>A `property` in Python is a special kind of attribute that provides a way to access and manipulate an object's attributes in a more convenient way.
 </details>
 <details>
 <summary>What is the difference between an attribute and a property in Python</summary>
 <br>
 
->The difference between an attribute and a property in Python is that an attribute is a basic variable or function, while a property provides a way to access and manipulate an object's attributes in a more convenient way.
+>An attribute in Python is a named property of a class that is assigned a value. It's a value that describes the state of an object. On the other hand, a property is a special kind of attribute in Python that is defined using property methods such as `getter`, `setter`, and `deleter`. Properties are used to define the access control and behavior of an attribute.
 </details>
 <details>
 <summary>What is the Pythonic way to write getters and setters in Python</summary>
 <br>
 
->The Pythonic way to write getters and setters in Python is to use the `@property` and `@<attribute>.setter` decorators.
+>The Pythonic way to write getters and setters in Python is to use the `property` built-in function. This allows you to define the getter, setter, and deleter methods for an attribute in a concise and readable way. For example:
+
+```python
+class Rectangle:
+    def __init__(self, width, height):
+        self._width = width
+        self._height = height
+
+    @property
+    def width(self):
+        return self._width
+
+    @width.setter
+    def width(self, value):
+        if value <= 0:
+            raise ValueError("Width must be positive")
+        self._width = value
+
+    @property
+    def height(self):
+        return self._height
+
+    @height.setter
+    def height(self, value):
+        if value <= 0:
+            raise ValueError("Height must be positive")
+        self._height = value
+```
 </details>
 <details>
 <summary>How to dynamically create arbitrary new attributes for existing instances of a class</summary>
 <br>
 
->You can dynamically create arbitrary new attributes for existing instances of a class by simply assigning a value to a new attribute name.
+>To dynamically create arbitrary new attributes for existing instances of a class, you can use the `setattr` function. This function takes an object and a string as arguments, and assigns the given value to the named attribute of the object. For example:
+
+```python
+class Person:
+    pass
+
+person = Person()
+setattr(person, "name", "John Doe")
+print(person.name) 
+# outputs :
+"John Doe"
+```
 </details>
 <details>
 <summary>How to bind attributes to object and classes</summary>
 <br>
 
->Attributes can be bound to object and classes by using the self keyword in methods within a class or by using the `setattr` function.
+>You can bind attributes to objects and classes using the assignment operator (=). For instance, you can assign a value to a new attribute on an object by simply assigning it to an instance attribute. For example:
+
+```python
+class Person:
+    pass
+
+person = Person()
+person.name = "John Doe"
+```
 </details>
 <details>
 <summary>What is the __dict__ of a class and/or instance of a class and what does it contain</summary>
 <br>
 
->The dict of a class and/or instance of a class contains the attributes and methods of the class or instance as key-value pairs.
+>The `__dict__` of a class or instance of a class is a dictionary that contains the namespace of the class or instance. It contains the names and values of all the attributes defined in the class or instance.
 </details>
 <details>
 <summary>How does Python find the attributes of an object or class</summary>
 <br>
 
->Python finds the attributes of an object or class by searching the object's namespace and its class's namespace. If it doesn't find the attribute in either namespace, it will raise an AttributeError.
+>Python finds the attributes of an object or class by searching the class hierarchy for a match. It first checks the `__dict__` of the object or class, and if it doesn't find the attribute there, it checks the parent class. This continues until Python reaches the base class (usually `object`) or until the attribute is found.
 </details>
 <details>
 <summary>How to use the getattr function</summary>
 <br>
 
->The `getattr` function is used in Python to access an object's attributes, even if the attribute name is not known until runtime. The function takes two arguments: the object and the name of the attribute as a string. If the attribute exists, its value is returned. If the attribute doesn't exist, a default value can be returned or an AttributeError can be raised.
+>The `getattr` function is used to retrieve the value of an attribute from an object. It takes an object and a string as arguments, and returns the value of the named attribute. If the attribute does not exist, an AttributeError is raised. To avoid raising an error, you can provide a default value as a third argument to `getattr`. For example:
+
+```python
+class Person:
+    def __init__(self, name):
+        self.name = name
+        self.age = 30
+
+person = Person("John Doe")
+print(getattr(person, "name", "Unknown")) # outputs "John Doe"
+print(getattr(person, "age", "Unknown")) # outputs 30
+print(getattr(person, "address", "Unknown")) # outputs "Unknown"
+```
 </details>
 
 ----------------------------
@@ -553,25 +850,58 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>How to write Docstrings to create tests</summary>
 <br>
 
->To write Docstrings to create tests, you can include test cases as docstrings within the functions or modules. The tests can be written using the doctest module, which allows you to write tests as part of the documentation.
+>Docstrings can be used to create tests by including examples of how to use the code and what the expected output should be. For example:
+
+```python
+def add(a, b):
+    """
+    This function adds two numbers and returns the result.
+
+    Example:
+    >>> add(2, 3)
+    5
+    >>> add(4, -1)
+    3
+    """
+    return a + b
+```
 </details>
 <details>
 <summary>How to write documentation for each module and function</summary>
 <br>
 
->Documentation for each module and function can be written using docstrings, which provide information about the purpose and usage of the code. Good documentation helps others understand your code and reduces the need for them to ask questions.
+>Documentation for each module and function should describe what the code does, how to use it, and what the inputs and outputs are. This documentation can be written in the form of docstrings, comments, or in a separate documentation file. For example:
+
+```python
+def add(a, b):
+    """
+    This function adds two numbers and returns the result.
+
+    :param a: The first number to add.
+    :type a: int
+    :param b: The second number to add.
+    :type b: int
+    :return: The sum of the two numbers.
+    :rtype: int
+
+    Example:
+    >>> add(2, 3)
+    5
+    """
+    return a + b
+```
 </details>
 <details>
 <summary>What are the basic option flags to create tests</summary>
 <br>
 
->The basic option flags to create tests are `-v` for verbose output, `-k` for test selection, and `-x` for stopping after first failure.
+>The basic option flags to create tests using the `unittest` module in Python include `-v` for verbose output, `-q` for quiet output, `-b` for running the tests without capturing output, and `-f` for running only the tests that failed in the last run.
 </details>
 <details>
 <summary>How to find edge cases</summary>
 <br>
 
->To find edge cases, you can think about and test the boundaries of the inputs and outputs, extreme cases, and any unusual or unexpected scenarios. It's important to test edge cases to make sure the code is robust and can handle unexpected inputs.
+>To find edge cases, you can think about the inputs to your code that are at the boundaries of the expected input range, or inputs that are unexpected or unconventional. You can also use automated testing tools or techniques, such as fuzz testing, to generate a large number of random test cases and check for edge cases. Additionally, manual testing and inspection can also be used to find edge cases.
 </details>
 
 --------------------------
@@ -585,7 +915,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What is OOP</summary>
 <br>
 
->Object-Oriented Programming (OOP) is a programming paradigm that focuses on the use of objects and classes to organize code, model real-world entities, and represent abstract concepts.
+>Object-Oriented Programming (OOP) is a programming paradigm that is based on the concept of "objects". Objects are instances of classes that have properties and methods. OOP is used to structure and organize code, making it easier to understand and maintain.
 </details>
 <details>
 <summary>“first-class everything”</summary>
@@ -639,7 +969,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What is the special __init__ method and how to use it</summary>
 <br>
 
->The special `init` method is a special method that is called automatically when an object is created from a class. It is used to initialize attributes and perform any other setup that the object needs.
+>The `__init__` method is a special method in Python that is automatically called when an object is created from a class. The `__init__` method is used to initialize the properties of an object.
 </details>
 <details>
 <summary>What is Data Abstraction, Data Encapsulation, and Information Hiding</summary>
@@ -669,13 +999,13 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What are the special __str__ and __repr__ methods and how to use them</summary>
 <br>
 
->The special `str` and `repr` methods are used to define how an object should be represented as a string. `str` is meant to return a human-readable representation of the object, while `repr` should return a string representation that could be used to recreate the object.
+>The `__str__` and `__repr__` methods are special methods in Python that are used to define a string representation of an object. The `__str__` method is used to return a human-readable string representation of an object, while the `__repr__` method is used to return a string that can be used to recreate the object.
 </details>
 <details>
 <summary>What is the difference between __str__ and __repr__</summary>
 <br>
 
->The difference between `str` and `repr` is that `str` is meant to be a readable representation of the object for the user, while `repr` is meant to be an unambiguous representation of the object for debugging and development purposes.
+>The `__str__` is a special method in Python that is used to define a human-readable string representation of an object. It is intended to be used as a string representation that could be used by end-users to understand what the object represents. The `__repr__` is also a special method in Python that defines a string representation of an object, but it is intended to be a complete and unambiguous representation of the object. The goal is to provide a string representation that could be used to recreate an equivalent object.
 </details>
 <details>
 <summary>What is a class attribute</summary>
@@ -693,31 +1023,39 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What is a class method</summary>
 <br>
 
->A class method is a method that is bound to the class and not the instance of the class.
+>A class method is a method that is bound to the class and not to an instance of the class. It can be called on the class itself, rather than on an instance of the class. Class methods are defined using the `@classmethod` decorator.
 </details>
 <details>
 <summary>What is a static method</summary>
 <br>
 
->A static method is a method that is not bound to the instance or the class, but instead has no connection to either.
+>A static method is a method that is defined within a class but has no access to class-specific information such as the class name, class attributes, etc. It is defined using the `@staticmethod` decorator.
 </details>
 <details>
 <summary>How to dynamically create arbitrary new attributes for existing instances of a class</summary>
 <br>
 
->To dynamically create arbitrary new attributes for existing instances of a class, you can use the setattr function.
+>New attributes can be dynamically created for instances of a class by simply assigning a value to a new variable using the dot notation. For example:
+
+```python
+class MyClass:
+    def __init__(self):
+        self.attribute = None
+
+my_instance = MyClass()
+my_instance.new_attribute = 42
+```
 </details>
 <details>
 <summary>How to bind attributes to object and classes</summary>
 <br>
 
->To bind attributes to objects and classes, you can simply assign a value to the attribute name.
-</details>
+>`Object attributes` can be bound to instances of a class by assigning values to them within an instance method. `Class attributes` can be bound to the class itself by assigning values to them outside of any method in the class.
 <details>
 <summary>What is and what does contain __dict__ of a class and of an instance of a class</summary>
 <br>
 
->`dict` of a class contains the names and values of the class's attributes, while `dict` of an instance of a class contains the names and values of the instance's attributes.
+>The `__dict__` attribute of a class is a dictionary that contains all the attributes of the class, including its methods and variables. The `__dict__` attribute of an instance of a class is a dictionary that contains all the attributes of the instance, including its variables, but not its methods.
 </details>
 <details>
 <summary>How does Python find the attributes of an object or class</summary>
@@ -729,7 +1067,20 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>How to use the getattr function</summary>
 <br>
 
->The `getattr` function is used to access the value of an attribute, even if the attribute does not exist.
+>The `getattr` function is used to access an attribute of an object or class. It takes two arguments: the object or class and the name of the attribute to access. If the attribute does not exist, `getattr` can return a default value that is provided as a third argument. For example:
+
+```python
+class MyClass:
+    def __init__(self):
+        self.attribute = 42
+
+my_instance = MyClass()
+value = getattr(my_instance, "attribute", "Attribute not found")
+print(value)  # Output: 42
+
+value = getattr(my_instance, "non_existing_attribute", "Attribute not found")
+print(value)  # Output: Attribute not found
+```
 </details>
 
 ---------------------------
