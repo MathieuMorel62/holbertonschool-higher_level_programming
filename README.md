@@ -900,77 +900,133 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>How to open a file</summary>
 <br>
 
->
-</details>
-<details>
-<summary>How to write text in a file</summary>
-<br>
-
->To open a file in Python, you can use the built-in `open()` function. This function takes the file name as an argument and returns a file object that you can use to read or write the file. Here's an example:
+>To open a file in Python, you can use the built-in `open()` function. This function takes the file name as an argument and returns a file object that you can use to read or write the file. The second argument to the `open()` function specifies the mode in which to open the file. In this case, `"r"` means "read".Here's an example:
 
 ```python
 file = open("example.txt", "r") # open the file for reading
 ```
 </details>
 <details>
+<summary>How to write text in a file</summary>
+<br>
+
+>To write to a file, you can use the `write()` method of the file object. Here's an example:
+
+```python
+file = open("example.txt", "w") # open the file for writing
+file.write("This is some text.") # write text to the file
+file.close() # close the file
+```
+</details>
+<details>
 <summary>How to read the full content of a file</summary>
 <br>
 
->
+>To read the entire contents of a file, you can use the `read()` method of the file object. Here's an example:
+
+```python
+file = open("example.txt", "r") # open the file for reading
+content = file.read() # read the entire contents of the file
+print(content) # print the contents
+file.close() # close the file
+```
 </details>
 <details>
 <summary>How to read a file line by line</summary>
 <br>
 
->
+>To read a file line by line, you can use a `for` loop and the `readline()` method of the file object. Here's an example:
+
+```python
+file = open("example.txt", "r") # open the file for reading
+for line in file:
+    print(line)
+file.close() # close the file
+```
 </details>
 <details>
 <summary>How to move the cursor in a file</summary>
 <br>
 
->
+>The position of the cursor in a file can be changed using the `seek()` method of the file object. This method takes an offset (in bytes) as an argument, and moves the cursor to the specified position. Here's an example:
+
+```python
+file = open("example.txt", "r") # open the file for reading
+print(file.tell()) # print the current position of the cursor
+file.seek(10) # move the cursor to the 10th byte
+print(file.tell()) # print the current position of the cursor
+file.close() # close the file
+```
 </details>
 <details>
 <summary>How to make sure a file is closed after using it</summary>
 <br>
 
->
+>It's important to close a file after you're done using it to release the resources it was using and to prevent corruption of the file's contents. You can close a file using the `close()` method of the file object. Here's an example:
+
+```python
+file = open("example.txt", "r") # open the file for reading
+# do some file operations
+file.close() # close the file
+```
 </details>
 <details>
 <summary>What is and how to use the with statement</summary>
 <br>
 
->
+>The `with` statement is used in Python to ensure that a resource is automatically released when it's no longer needed. When used with a file, it automatically closes the file when the block of code inside the `with` statement is finished. Here's an example:
+
+```python
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+```
 </details>
 <details>
 <summary>What is JSON</summary>
 <br>
 
->
+>JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is based on a subset of the JavaScript programming language, and is commonly used to transmit data between a server and a web application. JSON data is represented as key-value pairs, similar to a dictionary in Python.
 </details>
 <details>
 <summary>What is serialization</summary>
 <br>
 
->
+>Serialization is the process of converting a data structure into a format that can be stored or transmitted across a network. The goal of serialization is to convert the state of an object into a form that can be reconstructed later in the same or another computer environment.
 </details>
 <details>
 <summary>What is deserialization</summary>
 <br>
 
->
+>Deserialization is the reverse process of serialization, where data is converted from a string representation back into its original data structure. The goal of deserialization is to reconstruct the original object from the serialized form.
 </details>
 <details>
 <summary>How to convert a Python data structure to a JSON string</summary>
 <br>
 
->
+>To convert a Python data structure to a JSON string, you can use the `json` module in Python. The `json.dumps()` function converts a Python object into a JSON-formatted string. Here's an example:
+
+```python
+import json
+
+data = {"name": "John", "age": 30, "city": "New York"}
+json_string = json.dumps(data, indent=4)
+print(json_string)
+```
 </details>
 <details>
 <summary>How to convert a JSON string to a Python data structure</summary>
 <br>
 
->
+>To convert a JSON string to a Python data structure, you can use the `json` module in Python. The `json.loads()` function converts a JSON-formatted string into a Python object. Here's an example:
+
+```python
+import json
+
+json_string = '{"name": "John", "age": 30, "city": "New York"}'
+data = json.loads(json_string)
+print(data)
+```
 </details>
 
 ------------------------------
