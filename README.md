@@ -954,7 +954,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 >Public, protected, and private attributes are different levels of visibility and accessibility for class attributes. Public attributes can be accessed from anywhere, protected attributes can be accessed only within the class and its subclasses, and private attributes can only be accessed within the class.
 </details>
 <details>
-<summary>What is 'self'</summary>
+<summary>What is self</summary>
 <br>
 
 >`Self` is a special keyword in Python that refers to the instance of the object that a method is being called on. It is used to access attributes and other methods of the object.
@@ -1051,6 +1051,7 @@ my_instance.new_attribute = 42
 <br>
 
 >`Object attributes` can be bound to instances of a class by assigning values to them within an instance method. `Class attributes` can be bound to the class itself by assigning values to them outside of any method in the class.
+</details>
 <details>
 <summary>What is and what does contain __dict__ of a class and of an instance of a class</summary>
 <br>
