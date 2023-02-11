@@ -766,31 +766,57 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>What is an assignment</summary>
 <br>
 
->An assignment is the process of assigning a value to a variable. In Python, you use the equal sign (=) to perform an assignment. For example: `x = 5` assigns the value 5 to the variable `x`.
+>In Python, an assignment is the operation of creating a reference to an object by giving a name to the object. The assignment operator is the equal sign (=), and is used to assign a value to a variable. For example:
+
+```python
+x = 42
+```
 </details>
 <details>
 <summary>What is an alias</summary>
 <br>
 
->An alias is a second reference to an existing object. If two variables refer to the same object, they are said to be aliases of each other.
+>An alias is a reference to an object that has more than one name. When you assign an object to another variable, you are creating an alias for the object. For example:
+
+```python
+x = 42
+y = x
+```
 </details>
 <details>
 <summary>How to know if two variables are identical</summary>
 <br>
 
->To know if two variables are identical, you can use the `is` operator in Python. The is operator returns `True` if the variables refer to the same object, and `False` otherwise. For example: `x is y` returns `True` if `x` and `y` refer to the same object.
+>To know if two variables are identical, you can use the `is` operator. The `is` operator returns `True` if the two variables refer to the same object, and `False` otherwise. For example:
+
+```python
+x = 42
+y = 42
+print(x is y)
+```
 </details>
 <details>
 <summary>How to know if two variables are linked to the same object</summary>
 <br>
 
->To know if two variables are linked to the same object, you can use the `==` operator in Python. The `==` operator returns `True` if the objects referred to by the variables have the same value, and `False` otherwise. For example: `x == y` returns `True` if the values of `x` and `y` are equal.
+>To know if two variables are linked to the same object, you can use the `is` operator. The `is` operator returns `True` if the two variables refer to the same object, and `False` otherwise. For example:
+
+```python
+x = [1, 2, 3]
+y = x
+print(x is y)
+```
 </details>
 <details>
 <summary>How to display the variable identifier (which is the memory address in the CPython implementation)</summary>
 <br>
 
->To display the variable identifier (memory address) in CPython, you can use the built-in `id()` function. For example: `id(x)` returns the memory address of the object referred to by `x`.
+>To display the variable identifier, which is the memory address in the CPython implementation, you can use the `id` built-in function. The `id` function returns a unique identifier for the object, which can be used to determine if two objects are the same. For example:
+
+```python
+x = 42
+print(id(x))
+```
 </details>
 <details>
 <summary>What is mutable and immutable</summary>
@@ -839,25 +865,67 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>How to list all attributes and methods of a class or instance</summary>
 <br>
 
->To list all attributes and methods of a class or instance, you can use the built-in `dir()` function in Python. For example, `dir(ClassName)` will return a list of all attributes and methods of the class `ClassName`. To list the attributes and methods of an instance, you can simply use `dir(instance)`.
+>To list all attributes and methods of a class or instance, you can use the built-in `dir()` function in Python.
+
+```python
+class MyClass:
+    def method(self):
+        pass
+
+obj = MyClass()
+print(dir(MyClass))
+print(dir(obj))
+```
 </details>
 <details>
 <summary>When can an instance have new attributes</summary>
 <br>
 
->An instance can have new attributes at any time. You can add new attributes to an instance simply by assigning a value to a new attribute name. For example, `instance.new_attribute = value` adds a new attribute `new_attribute` to the instance with the value `value`.
+>An instance of a class can have new attributes that are not part of the class definition. You can add new attributes to an instance at any time, by simply assigning a value to a new variable with the same name as the instance.
+
+```python
+class MyClass:
+    pass
+
+obj = MyClass()
+obj.new_attribute = 42
+```
 </details>
 <details>
 <summary>How to inherit class from another</summary>
 <br>
 
->To inherit a class from another, you use the syntax `class SubclassName(ParentClassName)` in Python. The subclass inherits all attributes and methods from the parent class.
+>To inherit a class from another class, you use the `class` statement with a `(SuperClass)` argument, where `SuperClass` is the name of the class to inherit from. Here's an example:
+
+```python
+class SuperClass:
+    def method(self):
+        print("SuperClass method")
+
+class SubClass(SuperClass):
+    pass
+
+obj = SubClass()
+obj.method()
+```
 </details>
 <details>
 <summary>How to define a class with multiple base classes</summary>
 <br>
 
->To define a class with multiple base classes, you use multiple parent classes in the parentheses when defining the class. For example: `class SubclassName(ParentClass1, ParentClass2, ParentClass3)`. The subclass inherits attributes and methods from all parent classes.
+>To define a class with multiple base classes, you use the `class` statement with a tuple of base classes as its argument. Here's an example:
+
+```python
+class Base1:
+    pass
+
+class Base2:
+    pass
+
+class SubClass(Base1, Base2):
+    pass
+```
+
 </details>
 <details>
 <summary>What is the default class every class inherit from</summary>
@@ -869,7 +937,20 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 <summary>How to override a method or attribute inherited from the base class</summary>
 <br>
 
->To override a method or attribute in a subclass, simply declare a new method or attribute with the same name in the subclass. The new method or attribute in the subclass will overwrite or replace the original method or attribute defined in the parent class. This allows the subclass to have its own implementation of a method or attribute, while still inheriting the rest of the attributes and methods from the parent class.
+>To override a method or attribute inherited from the base class, you simply define a new method or attribute with the same name in the subclass. The new method or attribute will then be used instead of the one inherited from the base class. Here's an example:
+
+```python
+class SuperClass:
+    def method(self):
+        print("SuperClass method")
+
+class SubClass(SuperClass):
+    def method(self):
+        print("SubClass method")
+
+obj = SubClass()
+obj.method()
+```
 </details>
 <details>
 <summary>Which attributes or methods are available by heritage to subclasses</summary>
