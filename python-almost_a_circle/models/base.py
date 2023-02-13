@@ -68,7 +68,7 @@ class Base:
         """ Returns a list of instances from a json file """
         filename = cls.__name__ + ".json"
         with open(filename, "r") as f:
-            if not path.isfile(filename):
+            if path.isfile(filename) is False:
                 return []
             else:
                 json_string = f.read()
