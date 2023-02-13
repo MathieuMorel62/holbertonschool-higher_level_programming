@@ -85,7 +85,7 @@ class Rectangle(Base):
         s_hei = self.__height
         return f"[Rectangle] ({s_id}) {s_x}/{s_y} - {s_wid}/{s_hei}"
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ Updates the rectangle instance attributes with the arguments """
         if args:
             if len(args) >= 1:
@@ -98,3 +98,6 @@ class Rectangle(Base):
                 self.x = args[3]
             if len(args) >= 5:
                 self.y = args[4]
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
