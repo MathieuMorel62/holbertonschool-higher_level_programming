@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ Rectangle class that inherits from Base """
-
 from models.base import Base
 
 
@@ -67,4 +66,5 @@ class Rectangle(Base):
             self.__y = value
 
     def area(self):
+        """ Return the area of the rectangle"""
         return self.width * self.height
