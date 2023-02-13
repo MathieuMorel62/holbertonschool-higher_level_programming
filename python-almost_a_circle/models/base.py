@@ -34,10 +34,12 @@ class Base:
         This method writes the JSON string representation
         of a list of objects to a file
         """
-        list_dictionaries = []
-        if list_objs is not None or len(list_objs) != 0:
+        if list_objs is None or len(list_objs) == 0:
+            with open(f"{cls.__name__}.json", mode="w") as json_file:
+                json_file.write("[]")
+        else:
+            list_dictionaries = []
             for obj in list_objs:
                 list_dictionaries.append(obj.to_dictionary())
-            else:
-                with open(f"{cls.__name__}.json", mode="w") as json_file:
-                    json_file.write(cls.to_json_string(list_dictionaries))
+            with open(f"{cls.__name__}.json", mode="w") as json_file:
+                json_file.write(cls.to_json_string(list_dictionaries))
