@@ -68,10 +68,12 @@ class Base:
         """ Returns a list of instances from a json file """
         if not path.isfile(cls.__name__ + ".json"):
             return []
-        with open(cls.__name__ + ".json", "r") as f:
-            json_string = f.read()
-            list_dictionaries = cls.from_json_string(json_string)
-            instances = []
-            for dictionary in list_dictionaries:
-                instances.append(cls.create(**dictionary))
-            return instances
+        else:
+            with open(cls.__name__ + ".json", "r") as f:
+                json_string = f.read()
+                list_dictionaries = cls.from_json_string(json_string)
+                instances = []
+                for dictionary in list_dictionaries:
+                    instances.append(cls.create(**dictionary))
+                return instances
+    
