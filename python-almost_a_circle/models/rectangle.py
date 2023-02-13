@@ -86,7 +86,7 @@ class Rectangle(Base):
         return f"[Rectangle] ({s_id}) {s_x}/{s_y} - {s_wid}/{s_hei}"
 
     def update(self, *args):
-        """ Updates the rectangle instance attributes with the given arguments """
+        """ Updates the rectangle instance attributes with the arguments """
         if args:
             if len(args) >= 1:
                 self.id = args[0]
