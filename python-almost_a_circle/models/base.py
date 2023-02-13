@@ -76,4 +76,3 @@ class Base:
                 for dictionary in list_dictionaries:
                     instances.append(cls.create(**dictionary))
                 return instances
-    
