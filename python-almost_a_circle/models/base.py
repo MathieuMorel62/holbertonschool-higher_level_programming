@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Base class """
 import json
-import os
+from os import path
 
 
 class Base:
@@ -68,7 +68,7 @@ class Base:
         """ Returns a list of instances from a json file """
         filename = cls.__name__ + ".json"
         with open(filename, "r") as f:
-            if os.stat(filename).st_size == 0:
+            if not path.isfile(filename):
                 return []
             else:
                 json_string = f.read()
