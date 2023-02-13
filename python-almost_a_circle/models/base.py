@@ -35,7 +35,7 @@ class Base:
         of a list of objects to a file
         """
         list_dictionaries = []
-        if list_objs:
+        if list_objs is not None or len(list_dictionaries) != 0:
             for obj in list_objs:
                 list_dictionaries.append(obj.to_dictionary())
             else:
