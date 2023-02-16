@@ -47,3 +47,10 @@ class TestSquare(unittest.TestCase):
         square = Square(10, 10, 10, 1)
         square.update(id=4)
         self.assertEqual(square.id, 4)
+
+    def test_create(self):
+        """Test Square create method"""
+        square = Square(10, 9, 8, 6)
+        r_dictionary = square.to_dictionary()
+        second_square = square.create(**r_dictionary)
+        self.assertEqual(second_square.id, 6)
