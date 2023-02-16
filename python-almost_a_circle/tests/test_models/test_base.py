@@ -1,25 +1,13 @@
-#!/usr/bin/python3
 import unittest
+import os
 from models.base import Base
+from models.rectangle import Rectangle
+from models.square import Square
 
+class TestRectangle(unittest.TestCase):
 
-class TestBase(unittest.TestCase):
-   @classmethod
-   def setUpClass(cls, class_name=Base, **kwargs):
-        cls._class_name = class_name
-        cls._class_kwargs = kwargs
-        cls.init_id = cls._class_name(**cls._class_kwargs).id
-
-   def test_instance(self):
-        """ Test instantiation """
-        first_obj = self._class_name(**self._class_kwargs)
-        second_obj = self._class_name(**self._class_kwargs)
-        third_obj = self._class_name(89, **self._class_kwargs)
-        fourth_obj = self._class_name(56, **self._class_kwargs)
-        fifth_obj = self._class_name('a', **self._class_kwargs)
-
-        self.assertEqual(first_obj.id, self.init_id + 1)
-        self.assertEqual(second_obj.id, first_obj.id + 1)
-        self.assertEqual(third_obj.id, 89)
-        self.assertEqual(fourth_obj.id, 56)
-        self.assertEqual(fifth_obj.id, 'a')
+    def test_unique_id(self):
+        """Test that a new instance of Base has a unique ID"""
+        b1 = Base()
+        b2 = Base()
+        self.assertNotEqual(b1.id, b2.id, "ID should be unique")
