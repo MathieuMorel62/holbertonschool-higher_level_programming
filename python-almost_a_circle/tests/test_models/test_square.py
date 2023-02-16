@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 import unittest
+import json
+import os
+from models.base import Base
 from models.square import Square
 
 

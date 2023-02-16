@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
 from .test_base import TestBase
+from models.base import Base
 from models.rectangle import Rectangle
+import os
+import json
 
 
 class TestRectangle(TestBase):
