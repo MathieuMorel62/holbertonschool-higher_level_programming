@@ -68,3 +68,10 @@ class test_rectangle(unittest.TestCase):
             r.display()
             output = buf.getvalue()
             self.assertEqual(output, expected_output)
+
+    def test_display(self):
+        """Test display exists"""
+        r = Rectangle(2, 2, 2, 2)
+        with StringIO() as buffer, redirect_stdout(buffer):
+            r.display()
+            self.assertEqual(buffer.getvalue(), "\n\n  ##\n  ##\n")
