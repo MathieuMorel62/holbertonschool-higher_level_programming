@@ -49,3 +49,9 @@ class test_rectangle(unittest.TestCase):
     def test_area_exists(self):
         """Test that the area method exists"""
         self.assertEqual(Rectangle(4, 5).area(), 20)
+
+    def test_str_output(self):
+        """Test that str method returns the expected string representation"""
+        r = Rectangle(3, 4, 2, 1, 10)
+        expected_output = "[Rectangle] (10) 2/1 - 3/4"
+        self.assertEqual(str(r), expected_output)
