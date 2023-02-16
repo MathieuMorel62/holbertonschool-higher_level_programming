@@ -1,6 +1,5 @@
 import unittest
 from models.square import Square
-from models.rectangle import Rectangle
 
 
 class TestSquare(unittest.TestCase):
@@ -16,3 +15,21 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(Square(1).size, 1)
         self.assertEqual(Square(1, 2).x, 2)
         self.assertEqual(Square(1, 2, 3).y, 3)
+
+    def test_invalid_arguments(self):
+        """Test invalid arguments"""
+        with self.assertRaises(TypeError):
+            Square("1")
+        with self.assertRaises(TypeError):
+            Square(1, "2")
+        with self.assertRaises(TypeError):
+            Square(1, 2, "3")
+
+    def test_negative_size(self):
+        """Test creation of a square with negative size"""
+        with self.assertRaises(ValueError):
+            Square(-1)
+        with self.assertRaises(ValueError):
+            Square(1, -2)
+        with self.assertRaises(ValueError):
+            Square(1, 2, -3)
