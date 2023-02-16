@@ -1,5 +1,6 @@
 import unittest
 import os
+import json
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
@@ -13,6 +14,7 @@ class TestRectangle(unittest.TestCase):
         self.assertNotEqual(b1.id, b2.id, "ID should be unique")
 
     def test_automatic_id(self):
+        """Test that an ID is correctly assigned to a new instance of Base"""
         b1 = Base()
         b2 = Base()
         self.assertEqual(b1.id, b2.id - 1)
@@ -20,6 +22,11 @@ class TestRectangle(unittest.TestCase):
     def test_passed_id(self):
         b1 = Base(89)
         self.assertEqual(b1.id, 89)
+
+    def test_to_json_string(self):
+        """Test to_json_string method with None argument"""
+        json_string = Base.to_json_string(None)
+        self.assertEqual(json_string, "[]")
 
 if __name__ == '__main__':
     unittest.main()
