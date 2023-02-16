@@ -1,5 +1,5 @@
 import unittest
-import os.path
+import json
 from io import StringIO
 from contextlib import redirect_stdout
 from models.rectangle import Rectangle
@@ -126,12 +126,9 @@ class test_rectangle(unittest.TestCase):
         self.assertEqual(second_rect.id, 6)
 
     def test_save_to_file(self):
-        r = Rectangle(10, 7, 2, 8, 1)
-        Rectangle.save_to_file([r])
-        file_path = "Rectangle.json"
-        self.assertTrue(os.path.isfile(file_path))
-        with open(file_path, "r") as file:
-            content = file.read()
-            expected_output = '[{"y": 8, "x": 2, "id": 1, "width": 10, "height": 7}]'
-            self.assertEqual(content, expected_output)
-        os.remove(file_path)
+        rect = Rectangle(2, 3, 1, 1, 1)
+        Rectangle.save_to_file([rect])
+        with open("Rectangle.json", "r") as file:
+            contents = file.read()
+        expected_output = '[{"id": 1, "width": 2, "height": 3, "x": 1, "y": 1}]'
+        self.assertEqual(json.loads(contents), json.loads(expected_output))
