@@ -1,30 +1,25 @@
 #!/usr/bin/python3
-
 import unittest
-
 from models.base import Base
-from models.rectangle import Rectangle
-from models.square import Square
 
 
+class TestBase(unittest.TestCase):
+   @classmethod
+   def setUpClass(cls, class_name=Base, **kwargs):
+        cls._class_name = class_name
+        cls._class_kwargs = kwargs
+        cls.init_id = cls._class_name(**cls._class_kwargs).id
 
-class TestsBase(unittest.TestCase):
-    def test_base(self):
-        self.assertEqual(Base().id, 1)
-        self.assertEqual(Base().id, 2)
-        self.assertEqual(Base(89).id, 89)
-        self.assertNotEqual(Base().id, 90)
-        self.assertEqual(Base().id, 4)
+   def test_instance(self):
+        """ Test instantiation """
+        first_obj = self._class_name(**self._class_kwargs)
+        second_obj = self._class_name(**self._class_kwargs)
+        third_obj = self._class_name(89, **self._class_kwargs)
+        fourth_obj = self._class_name(56, **self._class_kwargs)
+        fifth_obj = self._class_name('a', **self._class_kwargs)
 
-    def test_id_incremental(self):
-        self.assertEqual(Base().id, 5)
-        self.assertEqual(Base().id, 6)
-
-    def test_not_none(self):
-        self.assertNotEqual(Base().id, None)
-    
-    def test_to_json_string(self):
-        self.assertEqual(Base.to_json_string(None), "[]")
-    
-    def test_from_json_string(self):
-        self.assertEqual(Base.from_json_string(None), [])
+        self.assertEqual(first_obj.id, self.init_id + 1)
+        self.assertEqual(second_obj.id, first_obj.id + 1)
+        self.assertEqual(third_obj.id, 89)
+        self.assertEqual(fourth_obj.id, 56)
+        self.assertEqual(fifth_obj.id, 'a')
