@@ -1,9 +1,8 @@
-import unittest
+
 from models.rectangle import Rectangle
 from models.base import Base
 from .test_base import TestBase
-import os
-import json
+
 
 
 class testRectangle(TestBase):
@@ -18,6 +17,3 @@ class testRectangle(TestBase):
         self.assertEqual(rect.x, 0)
         self.assertEqual(rect.y, 0)
         self.assertEqual(rect.id, rect._Base__nb_objects)
-
-if __name__ == '__main__':
-    unittest.main()

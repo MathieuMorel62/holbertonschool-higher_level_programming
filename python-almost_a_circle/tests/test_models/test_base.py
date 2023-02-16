@@ -1,11 +1,12 @@
 import unittest
-import os
-import json
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
+import os
+import json
 
-class TestRectangle(unittest.TestCase):
+
+class TestBase(unittest.TestCase):
 
     def test_unique_id(self):
         """Test that a new instance of Base has a unique ID"""
@@ -29,6 +30,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(json_string, "[]")
 
     def test_from_json_string_list_empty(self):
+        """ Test from_json_string returns an empty list """
         self.assertTrue(hasattr(Base, 'from_json_string'))
         self.assertEqual(Base.from_json_string("[]"), [])
 
