@@ -11,3 +11,15 @@ class TestRectangle(unittest.TestCase):
         b1 = Base()
         b2 = Base()
         self.assertNotEqual(b1.id, b2.id, "ID should be unique")
+
+    def test_automatic_id(self):
+        b1 = Base()
+        b2 = Base()
+        self.assertEqual(b1.id, b2.id - 1)
+
+    def test_passed_id(self):
+        b1 = Base(89)
+        self.assertEqual(b1.id, 89)
+
+if __name__ == '__main__':
+    unittest.main()
