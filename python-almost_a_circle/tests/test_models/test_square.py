@@ -1,5 +1,6 @@
 import unittest
 from models.square import Square
+from models.rectangle import Rectangle
 
 
 class TestSquare(unittest.TestCase):
@@ -9,3 +10,9 @@ class TestSquare(unittest.TestCase):
         s = Square(5, 2, 3, 7)
         expected_output = {'id': 7, 'size': 5, 'x': 2, 'y': 3}
         self.assertDictEqual(s.to_dictionary(), expected_output)
+
+    def test_square_creation(self):
+        """Test creation of a Square"""
+        self.assertEqual(Square(1).size, 1)
+        self.assertEqual(Square(1, 2).x, 2)
+        self.assertEqual(Square(1, 2, 3).y, 3)
