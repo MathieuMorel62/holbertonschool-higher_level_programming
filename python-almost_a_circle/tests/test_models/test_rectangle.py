@@ -1,5 +1,6 @@
 import unittest
-import os
+from io import StringIO
+from contextlib import redirect_stdout
 from models.rectangle import Rectangle
 from models.base import Base
 
@@ -55,3 +56,15 @@ class test_rectangle(unittest.TestCase):
         r = Rectangle(3, 4, 2, 1, 10)
         expected_output = "[Rectangle] (10) 2/1 - 3/4"
         self.assertEqual(str(r), expected_output)
+
+    def test_display_without_x_y(self):
+        """
+        Test that the display method outputs the correct
+        representation of a rectangle
+        """
+        r = Rectangle(2, 2)
+        expected_output = "##\n##\n"
+        with StringIO() as buf, redirect_stdout(buf):
+            r.display()
+            output = buf.getvalue()
+            self.assertEqual(output, expected_output)
