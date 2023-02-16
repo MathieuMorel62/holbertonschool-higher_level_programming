@@ -151,7 +151,7 @@ class test_rectangle(unittest.TestCase):
             self.assertEqual(json.dumps(ls), file.read())
 
     def test_load_from_file_no_file(self):
-        """Test Rectangle load_from_file method when file doesn't exist"""
+        """Test Rectangle load_from_file method"""
         if os.path.exists("Rectangle.json"):
             os.remove("Rectangle.json")
         self.assertEqual(Rectangle.load_from_file(), [])
