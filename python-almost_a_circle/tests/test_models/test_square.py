@@ -33,3 +33,17 @@ class TestSquare(unittest.TestCase):
             Square(1, -2)
         with self.assertRaises(ValueError):
             Square(1, 2, -3)
+        with self.assertRaises(ValueError):
+            Square(0, 10).size
+
+    def test_str(self):
+        """Test the str method of the Square class."""
+        square = Square(4, 5, 6, 7)
+        expected_output = '[Square] (7) 5/6 - 4'
+        self.assertEqual(str(square), expected_output)
+
+    def test_update(self):
+        """Test update method in Square"""
+        square = Square(10, 10, 10, 1)
+        square.update(id=4)
+        self.assertEqual(square.id, 4)
