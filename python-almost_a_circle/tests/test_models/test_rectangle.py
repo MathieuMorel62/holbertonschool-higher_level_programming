@@ -70,8 +70,14 @@ class test_rectangle(unittest.TestCase):
             self.assertEqual(output, expected_output)
 
     def test_display(self):
-        """Test display exists"""
+        """Test rectangle display exists"""
         r = Rectangle(2, 2, 2, 2)
         with StringIO() as buffer, redirect_stdout(buffer):
             r.display()
             self.assertEqual(buffer.getvalue(), "\n\n  ##\n  ##\n")
+
+    def test_to_dictionary(self):
+        """Test Rectangle to_dictionary"""
+        r = Rectangle(2, 5, 4, 1, 7)
+        expected_output = {'id': 7, 'width': 2, 'height': 5, 'x': 4, 'y': 1}
+        self.assertDictEqual(r.to_dictionary(), expected_output)
