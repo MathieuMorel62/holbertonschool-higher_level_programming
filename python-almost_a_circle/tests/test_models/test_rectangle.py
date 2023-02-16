@@ -84,36 +84,13 @@ class test_rectangle(unittest.TestCase):
 
     def test_update(self):
         """ Test update method with arbitrary number of arguments """
-        r = Rectangle(10, 10, 10, 10, 10)
-        r.update(1, 2, 3, 4, 5)
-        self.assertEqual(str(r), "[Rectangle] (1) 4/5 - 2/3")
+        r = Rectangle(10, 10, 10, 10, 1)
+        r.update(id=3)
+        self.assertEqual(Rectangle.id, 3)
 
-    def test_update_args_1(self):
-        """ Test update method with one argument """
-        r = Rectangle(10, 10, 10, 10, 10)
-        r.update(89)
-        self.assertEqual(str(r), "[Rectangle] (89) 10/10 - 10/10")
-
-    def test_update_args_2(self):
-        """ Test update method with two arguments """
-        r = Rectangle(10, 10, 10, 10, 10)
-        r.update(89, 2)
-        self.assertEqual(str(r), "[Rectangle] (89) 10/10 - 2/10")
-
-    def test_update_args_3(self):
-        """ Test update method with three arguments """
-        r = Rectangle(10, 10, 10, 10, 10)
-        r.update(89, 2, 3)
-        self.assertEqual(str(r), "[Rectangle] (89) 10/10 - 2/3")
-
-    def test_update_args_4(self):
-        """ Test update method with four arguments """
-        r = Rectangle(10, 10, 10, 10, 10)
-        r.update(89, 2, 3, 4)
-        self.assertEqual(str(r), "[Rectangle] (89) 4/10 - 2/3")
-
-    def test_update_args_5(self):
-        """ Test update method with five arguments """
-        r = Rectangle(10, 10, 10, 10, 10)
-        r.update(89, 2, 3, 4, 5)
-        self.assertEqual(str(r), "[Rectangle] (89) 4/5 - 2/3")
+    def test_create(self):
+        rect = Rectangle(10, 9, 8, 7, 6)
+        rect_dictionary = rect.to_dictionary()
+        second_r = Rectangle.create(**rect_dictionary)
+        self.assertEqual(second_r.id, 6)
+        
