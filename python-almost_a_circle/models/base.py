@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Base class """
 import json
-from os import path
+import os
 
 
 class Base:
@@ -24,7 +24,7 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """ Returns the JSON string representation of list_dictionaries """
-        if list_dictionaries is None or len(list_dictionaries) == 0:
+        if list_dictionaries is None or list_dictionaries == {}:
             return "[]"
         else:
             return json.dumps(list_dictionaries)
@@ -48,31 +48,30 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """ Returns the list of the JSON string representation json_string """
-        if json_string is None or json_string is "":
+        if json_string is None or len(json_string) == 0:
             return []
-        else:
-            return json.loads(json_string)
+        return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
         """ Returns an instance with all attributes set """
-        if cls.__name__ == "Square":
-            instance = cls(1)
+        if cls.__name__ == "Rectangle":
+            instance = cls(4, 2)
         else:
-            instance = cls(1, 1)
+            instance = cls(4)
         instance.update(**dictionary)
         return instance
 
     @classmethod
     def load_from_file(cls):
         """ Returns a list of instances from a json file """
-        if not path.isfile(cls.__name__ + ".json"):
+        filename = f"{cls.__name__}.json"
+        if os.path.isfile(filename) is False:
             return []
-        else:
-            with open(cls.__name__ + ".json", "r") as f:
-                json_string = f.read()
-                list_dictionaries = cls.from_json_string(json_string)
-                instances = []
-                for dictionary in list_dictionaries:
-                    instances.append(cls.create(**dictionary))
-                return instances
+        list = []
+        with open(filename, "r") as file:
+            json_content = file.read()
+        list_json = cls.from_json_string(json_content)
+        for instance in list_json:
+            list.append(cls.create(**instance))
+        return list
