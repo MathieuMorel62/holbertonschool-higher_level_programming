@@ -1,4 +1,5 @@
 import unittest
+import os
 from models.square import Square
 
 
@@ -54,3 +55,9 @@ class TestSquare(unittest.TestCase):
         r_dictionary = square.to_dictionary()
         second_square = square.create(**r_dictionary)
         self.assertEqual(second_square.id, 6)
+
+    def test_load_from_file_when_file_doesnt_exist(self):
+        """Test Square load_from_file method when the file doesn't exist"""
+        if os.path.exists("Square.json"):
+            os.remove("Square.json")
+        self.assertEqual(Square.load_from_file(), [])
