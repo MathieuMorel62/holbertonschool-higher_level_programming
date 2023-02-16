@@ -1,6 +1,7 @@
 import unittest
+import os
+import json
 from io import StringIO
-import os.path
 from contextlib import redirect_stdout
 from models.rectangle import Rectangle
 from models.base import Base
@@ -139,3 +140,18 @@ class test_rectangle(unittest.TestCase):
         with open("Rectangle.json", "r") as file:
             self.assertEqual(file.read(), "[]")
         os.remove("Rectangle.json")
+
+    def test_save_to_file(self):
+        """Test save_to_file method with a list of Rectangle instances"""
+        rect1 = Rectangle(1, 1, 1, 1, 1)
+        rect2 = Rectangle(2, 2, 2, 2, 2)
+        Rectangle.save_to_file([rect1, rect2])
+        with open("Rectangle.json", "r") as file:
+            ls = [rect1.to_dictionary(), rect2.to_dictionary()]
+            self.assertEqual(json.dumps(ls), file.read())
+
+    def test_load_from_file_no_file(self):
+        """Test Rectangle load_from_file method when file doesn't exist"""
+        if os.path.exists("Rectangle.json"):
+            os.remove("Rectangle.json")
+        self.assertEqual(Rectangle.load_from_file(), [])
