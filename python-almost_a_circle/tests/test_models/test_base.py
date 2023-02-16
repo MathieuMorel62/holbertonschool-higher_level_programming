@@ -5,7 +5,7 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
-class TestRectangle(unittest.TestCase):
+class TestBase(unittest.TestCase):
 
     def test_unique_id(self):
         """Test that a new instance of Base has a unique ID"""
@@ -27,6 +27,10 @@ class TestRectangle(unittest.TestCase):
         """Test to_json_string method with None argument"""
         json_string = Base.to_json_string(None)
         self.assertEqual(json_string, "[]")
+
+    def test_from_json_string_exists(self):
+        """ Tests if the from_json_string method exists in the Base class """
+        self.assertTrue(hasattr(Base, 'from_json_string'))
 
 if __name__ == '__main__':
     unittest.main()
