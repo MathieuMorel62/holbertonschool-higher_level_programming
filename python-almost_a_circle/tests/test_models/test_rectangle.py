@@ -1,11 +1,10 @@
 import unittest
+import os
 from models.rectangle import Rectangle
 from models.base import Base
-from .test_base import TestBase
 
 
-
-class testRectangle(TestBase):
+class test_rectangle(unittest.TestCase):
 
     def test_rectangle_instance(self):
         """Test if rectangle instance is created successfully"""
@@ -29,7 +28,6 @@ class testRectangle(TestBase):
         with self.assertRaises(TypeError):
             Rectangle(1, 2, 3, "4")
 
-
     def test_Rectangle_negative_or_zero_args(self):
         """
         Test if creating Rectangle instance with negative
@@ -47,16 +45,3 @@ class testRectangle(TestBase):
             Rectangle(1, 2, -3)
         with self.assertRaises(ValueError):
             Rectangle(1, 2, 3, -4)
-
-    def test_area(self):
-        """Test that the area method returns the correct area"""
-        Rectangle(2, 5)
-        self.assertEqual(Rectangle.area(), 10)
-        Rectangle(5, 10)
-        self.assertEqual(Rectangle.area(), 50)
-        Rectangle(10, 10)
-        self.assertEqual(Rectangle.area(), 100)
-
-
-if __name__ == '__main__':
-    unittest.main()

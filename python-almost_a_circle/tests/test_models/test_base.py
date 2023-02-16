@@ -1,12 +1,8 @@
 import unittest
 from models.base import Base
-from models.rectangle import Rectangle
-from models.square import Square
-import os
-import json
 
 
-class TestBase(unittest.TestCase):
+class test_base(unittest.TestCase):
 
     def test_unique_id(self):
         """Test that a new instance of Base has a unique ID"""
