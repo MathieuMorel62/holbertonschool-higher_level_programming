@@ -22,6 +22,30 @@ class testRectangle(TestBase):
         """Test that passing a string as width raises a TypeError"""
         with self.assertRaises(TypeError):
             Rectangle("1", 2)
+        with self.assertRaises(TypeError):
+            Rectangle(1, "2")
+        with self.assertRaises(TypeError):
+            Rectangle(1, 2, "3")
+        with self.assertRaises(TypeError):
+            Rectangle(1, 2, 3, "4")
+
+    def test_Rectangle_negative_or_zero_args(self):
+        """
+        Test if creating Rectangle instance with negative
+        or zero args raises ValueError
+        """
+        with self.assertRaises(ValueError):
+            Rectangle(-1, 2)
+        with self.assertRaises(ValueError):
+            Rectangle(1, -2)
+        with self.assertRaises(ValueError):
+            Rectangle(0, 2)
+        with self.assertRaises(ValueError):
+            Rectangle(1, 0)
+        with self.assertRaises(ValueError):
+            Rectangle(1, 2, -3)
+        with self.assertRaises(ValueError):
+            Rectangle(1, 2, 3, -4)
 
 
 if __name__ == '__main__':
