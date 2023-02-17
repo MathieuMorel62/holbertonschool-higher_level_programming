@@ -1,4 +1,4 @@
-# <p align="center>Python - Almost a circle</p>
+# <p align="center">Python - Almost a circle</p>
 
 <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1129756/retina_1708x683_cover-beginners-guide-to-concurrency-and-parallelism-in-python-f26e18f0dea81ddf297e548a44eef227.png" width="center">
 
