@@ -1464,6 +1464,123 @@ print(data)
 
 ------------------------------
 
+#### [Python - Almost a circle](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x0C-python-almost_a_circle)
+#### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
+
+<details>
+<summary>What is Unit testing and how to implement it in a large project</summary>
+<br>
+
+>Unit testing is a software testing technique that involves writing test cases for individual units or components of a software application. The purpose of unit testing is to isolate and test each part of the code to ensure that it performs as expected. To implement unit testing in a large project, you should:
+      
+    - Write test cases for each function or module that you want to test.
+    - Use a testing framework such as pytest or unittest to automate the testing process.
+    - Integrate the testing process into your development workflow, such as by running the tests automatically every time you make changes to the code.
+    - Run the tests regularly to ensure that your code is functioning as expected.
+</details>
+<details>
+<summary>How to serialize and deserialize a Class</summary>
+<br>
+
+>Serialization is the process of converting a class or object into a format that can be stored or transmitted, while deserialization is the reverse process of converting the serialized data back into an object or class. In Python, you can serialize and deserialize a class using the pickle module. Here's an example:
+
+```python
+import pickle
+
+class MyClass:
+    def __init__(self, value):
+        self.value = value
+
+# Serialize
+my_object = MyClass(42)
+serialized_object = pickle.dumps(my_object)
+
+# Deserialize
+deserialized_object = pickle.loads(serialized_object)
+print(deserialized_object.value) 
+
+# Output: 42
+```
+</details>
+<details>
+<summary>How to write and read a JSON file</summary>
+<br>
+
+>JSON is a lightweight data interchange format that is widely used in web applications. In Python, you can write and read a JSON file using the json module. Here's an example:
+
+```python
+import json
+
+# Write to file
+data = {"name": "John", "age": 30}
+with open("data.json", "w") as f:
+    json.dump(data, f)
+
+# Read from file
+with open("data.json", "r") as f:
+    data = json.load(f)
+print(data) 
+    
+# Output: {'name': 'John', 'age': 30}
+```
+</details>
+<details>
+<summary>What is *args and how to use it</summary>
+<br>
+
+>`*args` is a special syntax in Python that allows a function to accept any number of positional arguments. The `*` before the variable name indicates that the arguments will be collected into a tuple. Here's an example:
+
+```python
+def my_function(*args):
+    for arg in args:
+        print(arg)
+
+my_function(1, 2, 3) 
+    
+# Output: 1 2 3
+```
+</details>
+<details>
+<summary>What is **kwargs and how to use it</summary>
+<br>
+
+>**kwargs is another special syntax in Python that allows a function to accept any number of keyword arguments. The ** before the variable name indicates that the arguments will be collected into a dictionary. Here's an example:
+    
+```python
+def my_function(**kwargs):
+    for key, value in kwargs.items():
+        print(key, value)
+
+my_function(name="John", age=30) 
+    
+# Output: name John age 30
+```
+</details>
+<details>
+<summary>How to handle named arguments in a function</summary>
+<br>
+
+>In Python, you can handle named arguments in a function using the `**kwargs` syntax. In this example, the `**kwargs` parameter allows the function to accept any additional named arguments that were not defined in the function signature. The function then checks whether the city argument was passed and prints a message accordingly.
+    
+```python
+def my_function(name, age, **kwargs):
+    if "city" in kwargs:
+        print(f"{name} lives in {kwargs['city']}.")
+    else:
+        print(f"{name} does not have a city listed.")
+
+my_function("John", 30, city="New York")
+my_function("Jane", 25)
+    
+# Output: John lives in New York.
+# Output: Jane does not have a city listed.
+```
+</details>
+
+--------------------------------
+
 ## Author
 
 - Mathieu Morel
