@@ -2,6 +2,17 @@
 
 <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1129756/retina_1708x683_cover-beginners-guide-to-concurrency-and-parallelism-in-python-f26e18f0dea81ddf297e548a44eef227.png" width="center">
 
+## Description
+### Python Almost a Circle
+
+The Python Almost a Circle project consists of two classes, `Base` and `Rectangle`, and a third class, `Square`, which inherits from the `Rectangle` class. The Base class is the mother class of all the other classes of the project and has for objective to manage the id attribute in all the future classes in order to avoid the duplication of the same code and the same errors.
+  
+The Rectangle class inherits from the Base class and has attributes of `height`, `width`, `x` position and `y` position. The attributes of the Rectangle class are protected and have getter and setter to protect the class. This Rectangle class has methods such as calculating the area, displaying a rectangle in stdout with the `"#"` character and updating attributes using keyword and non-keyword arguments.
+  
+The Square class inherits from the Rectangle class and has no additional attributes. This class has a constructor that inherits the attributes of the Rectangle class and assigns the value of size to the height and width. The str method of the Square class returns `[Square] (<id>) <x>/<y> - <size>` - in our case, the width or height.
+  
+The project must be tested and validated according to PEP 8 standards and all methods, classes and files must be unit tested.
+
 ## Background Context
 The AirBnB project is a big part of the Higher level curriculum. This project will help you be ready for it.
   
