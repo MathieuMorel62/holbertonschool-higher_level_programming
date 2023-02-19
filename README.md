@@ -1464,7 +1464,7 @@ print(data)
 
 ------------------------------
 
-#### [Python - Almost a circle](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x0C-python-almost_a_circle)
+### [Python - Almost a circle](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x0C-python-almost_a_circle)
 #### `General`
 
 At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
