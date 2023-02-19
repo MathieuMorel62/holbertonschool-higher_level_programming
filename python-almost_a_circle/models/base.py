@@ -2,6 +2,7 @@
 """ Base class """
 import json
 import os
+import turtle
 
 
 class Base:
@@ -75,3 +76,38 @@ class Base:
         for instance in list_json:
             list.append(cls.create(**instance))
         return list
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """ Draw all rectangles and squares """
+        window = turtle.Screen()
+        t = turtle.Turtle()
+        t.speed(0)
+
+        # Draw rectangles
+        for rectangle in list_rectangles:
+            t.penup()
+            t.goto(rectangle.x, rectangle.y)
+            t.pendown()
+            t.color('blue')
+            t.begin_fill()
+            for i in range(2):
+                t.forward(rectangle.width)
+                t.left(90)
+                t.forward(rectangle.height)
+                t.left(90)
+            t.end_fill()
+
+        # Draw squares
+        for square in list_squares:
+            t.penup()
+            t.goto(square.x, square.y)
+            t.pendown()
+            t.color('green')
+            t.begin_fill()
+            for i in range(4):
+                t.forward(square.size)
+                t.left(90)
+            t.end_fill()
+
+        window.mainloop()
