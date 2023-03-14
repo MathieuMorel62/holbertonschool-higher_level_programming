@@ -2,7 +2,7 @@
 
 -- Creates the database
 CREATE DATABASE
-    IF NOT EXISTS user_0d_2;
+    IF NOT EXISTS hbtn_0d_2;
 
 -- Create the user with the password
 CREATE USER
