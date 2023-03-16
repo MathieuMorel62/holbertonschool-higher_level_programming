@@ -23,7 +23,8 @@ if __name__ == "__main__":
 
     results = cursor.fetchall()
     for row in results:
-        print(row)
+        if row[1][0] == 'N':
+            print(row)
 
     cursor.close()
     connection.close()
