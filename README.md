@@ -1581,6 +1581,447 @@ my_function("Jane", 25)
 
 --------------------------------
 
+<img src="https://static.javatpoint.com/mysql/images/mysql-vs-sql.png" width="100%">
+
+## Introduction to MySQL and SQL
+### MySQL
+
+`MySQL` is a popular open-source relational database management system. It is written in C and C++, and is used by many businesses and applications to store and manage their data.  
+  
+`MySQL` supports database operations such as creating, updating, and deleting data, as well as managing security, users, and access. It is available on a variety of platforms, including Windows, Linux, and macOS.  
+  
+`MySQL` is known for its high stability, robustness, and reliability, and is used by companies of all sizes to manage their data.
+  
+### SQL
+
+`SQL (Structured Query Language)` is a computer language used to manage relational databases. It allows users to create, modify, and query databases using simple commands.  
+  
+`SQL` is the standard language for relational databases and is used by many different database management systems and applications.  
+  
+`SQL` commands are used to perform various operations on data, such as creating tables, inserting data, selecting data, and updating data.  
+  
+### Difference between MySQL and SQL
+
+`MySQL` is a specific implementation of `SQL`, meaning it uses the SQL language to perform operations on databases.  
+  
+`SQL` is a query language used to query databases, while `MySQL` is a database management system that uses `SQL` to interact with the data stored in the database.  
+  
+In summary, `SQL` is a standard query language used to query databases, while `MySQL` is a database management system that uses the `SQL` language to interact with the data stored in the database.  
+
+------------------------
+
+## Projects
+
+### [SQL - Introduction](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x0D-SQL_introduction)
+#### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
+
+<details>
+<summary>What’s a database</summary>
+<br>
+
+>A database is a collection of data that is organized in a way that allows users to easily access, manage, and update the information it contains. Databases are used in a wide range of applications, from simple contact lists to complex business systems.
+
+</details>
+<details>
+<summary>What's a Relational Database</summary>
+<br>
+
+>A relational database is a type of database that organizes data into one or more tables. Each table consists of rows and columns, with each column representing a specific attribute of the data and each row representing a specific instance of that data.  
+  
+>Relational databases also define relationships between tables, allowing data to be linked and accessed in meaningful ways. This makes relational databases particularly useful for applications that need to manage large amounts of data with complex relationships.
+
+</details>
+<details>
+<summary>What Does SQL Stand For</summary>
+<br>
+
+>SQL stands for Structured Query Language. It is a programming language used to manage relational databases. SQL allows users to create, modify, and query databases using simple commands.
+
+</details>
+<details>
+<summary>What's MySQL</summary>
+<br>
+
+>MySQL is an open-source relational database management system that uses SQL to manage and manipulate data. It is particularly popular for web applications, and is used by many popular websites and web-based applications.
+
+</details>
+<details>
+<summary>How to Create a Database in MySQL</summary>
+<br>
+
+To create a new database in MySQL, you can use the `CREATE DATABASE` statement followed by the name of the database you want to create. For example:  
+     
+```sql
+CREATE DATABASE mydatabase;
+```
+  
+This will create a new database called `mydatabase`.
+</details>
+<details>
+<summary>What Does DDL and DML Stand For</summary>
+<br>
+
+>DDL stands for Data Definition Language, and it is used to define the structure of a database. DDL commands are used to create, modify, and delete database objects such as tables, indexes, and views.  
+  
+>DML stands for Data Manipulation Language, and it is used to manipulate data within a database. DML commands are used to insert, update, and delete data in a table.
+</details>
+<details>
+<summary>How to CREATE or ALTER a Table</summary>
+<br>
+
+To create a new table in MySQL, you can use the `CREATE TABLE` statement followed by the name of the table and the columns it should contain. For example:  
+    
+```sql
+CREATE TABLE mytable (
+  id INT PRIMARY KEY,
+  name VARCHAR(50),
+  age INT
+);
+```
+
+This will create a new table called `mytable` with three columns: `id`, `name`, and `age`.  
+  
+To alter an existing table in MySQL, you can use the `ALTER TABLE` statement followed by the name of the table and the changes you want to make. For example:  
+    
+```sql
+ALTER TABLE mytable ADD email VARCHAR(50);
+```
+
+This will add a new column called `email` to the `mytable` table.
+</details>
+<details>
+<summary>How to SELECT Data from a Table</summary>
+<br>
+
+To select data from a table in MySQL, you can use the `SELECT` statement followed by the columns you want to retrieve and the name of the table. For example:  
+     
+```sql
+SELECT name, age FROM mytable;
+```
+
+This will retrieve the `name` and `age` columns from the `mytable` table.
+</details>
+<details>
+<summary>How to INSERT, UPDATE or DELETE Data</summary>
+<br>
+
+To insert new data into a table in MySQL, you can use the `INSERT INTO` statement followed by the name of the table and the values you want to insert. For example:  
+    
+```sql
+INSERT INTO mytable (id, name, age) VALUES (1, 'John', 30);
+```
+
+This will insert a new row into the `mytable` table with the values `1`, `'John'`, and `30` for the `id`, `name`, and age `columns`, respectively.
+  
+To update existing data in a table in MySQL, you can use the `UPDATE` statement followed by the name of the table, the columns you want to update, and the new values. For example:  
+    
+```sql
+UPDATE mytable SET age = 31 WHERE name = 'John';
+```
+
+This will update the `age` column of the row where the `name` column is `'John'` to `31`.
+
+To delete data from a table in MySQL, you can use the `DELETE FROM` statement followed by the name of the table and the condition for the rows you want to delete. For example:  
+    
+```sql
+DELETE FROM mytable WHERE id = 1;
+```
+
+This will delete the row from the `mytable` table where the `id` column is `1`.
+</details>
+<details>
+<summary>What Are Subqueries</summary>
+<br>
+
+A subquery is a query that is nested inside another query. It allows you to perform more complex queries by using the results of one query as the input for another query. For example:  
+    
+```sql
+SELECT name FROM mytable WHERE age = (SELECT MAX(age) FROM mytable);
+```
+
+This will retrieve the `name` of the row in `mytable` where the `age` is the highest value in the `age` column.
+</details>
+<details>
+<summary>How to Use MySQL Functions</summary>
+<br>
+
+MySQL provides a wide range of built-in functions that can be used to manipulate data in various ways. Some examples of MySQL functions include `SUM`, `AVG`, `MAX`, `MIN`, `COUNT`, and `CONCAT`.
+  
+To use a function in MySQL, you can include it in your SQL statement as follows:  
+    
+```sql
+SELECT SUM(sales) FROM sales_table;
+```
+
+This will retrieve the sum of the `sales` column from the `sales_table`.
+</details>
+
+-----------------------
+
+### [SQL - More Queries](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x0E-SQL_more_queries)
+#### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
+
+<details>
+<summary>How to create a new MySQL user</summary>
+<br>
+
+To create a new user in MySQL, you can use the `CREATE USER` command followed by the username and password. For example:
+  
+```sql
+CREATE USER 'myuser'@'localhost' IDENTIFIED BY 'mypassword';
+```
+   
+This will create a new user called `myuser` with the password `mypassword` that can only be accessed from the same machine as the MySQL server (`localhost`).
+</details>
+<details>
+<summary>How to manage privileges for a user to a database or table</summary>
+<br>
+
+To grant privileges to a user in MySQL, you can use the `GRANT` command followed by the type of privilege and the database or table name. For example:
+  
+```sql
+GRANT SELECT, INSERT, UPDATE ON mydatabase.* TO 'myuser'@'localhost';
+```
+
+This will grant the user `myuser` the privileges to select, insert, and update data in all tables in the `mydatabase` database.
+  
+To revoke privileges from a user, you can use the `REVOKE` command followed by the same information used in the `GRANT` command.
+</details>
+<details>
+<summary>What’s a PRIMARY KEY</summary>
+<br>
+
+A primary key is a column or combination of columns in a table that uniquely identifies each row in the table. It is used to enforce data integrity and to create relationships between tables. In MySQL, you can create a primary key using the `PRIMARY KEY` constraint when creating a table. For example:
+  
+```sql
+CREATE TABLE mytable (
+  id INT PRIMARY KEY,
+  name VARCHAR(50),
+  age INT
+);
+```
+  
+In this example, the `id` column is used as the primary key.
+</details>
+<details>
+<summary>What’s a FOREIGN KEY</summary>
+<br>
+
+A foreign key is a column or combination of columns in a table that refers to the primary key of another table. It is used to create relationships between tables and enforce referential integrity. In MySQL, you can create a foreign key using the `FOREIGN KEY` constraint when creating a table. For example:
+  
+```sql
+CREATE TABLE orders (
+  id INT PRIMARY KEY,
+  customer_id INT,
+  product_id INT,
+  FOREIGN KEY (customer_id) REFERENCES customers(id),
+  FOREIGN KEY (product_id) REFERENCES products(id)
+);
+```
+  
+In this example, the `customer_id` and `product_id` columns are foreign keys that refer to the `id` column in the `customers` and `products` tables, respectively.
+</details>
+<details>
+<summary>How to use NOT NULL and UNIQUE constraints</summary>
+<br>
+
+In MySQL, you can use the `NOT NULL` constraint to ensure that a column does not contain null values. You can use the `UNIQUE` constraint to ensure that a column contains only unique values. For example:
+  
+```sql
+CREATE TABLE mytable (
+  id INT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL UNIQUE,
+  age INT NOT NULL
+);
+```
+  
+In this example, the `name` column must contain a value and must be unique, while the `age` column must contain a value but does not need to be unique.
+</details>
+<details>
+<summary>How to retrieve datas from multiple tables in one request</summary>
+<br>
+
+In MySQL, you can retrieve data from multiple tables in one request using the `JOIN` keyword. There are different types of joins, such as `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN`. For example:
+  
+```sql
+SELECT orders.id, customers.name, products.name
+FROM orders
+INNER JOIN customers ON orders.customer_id = customers.id
+INNER JOIN products ON orders.product_id = products.id;
+```
+  
+This will retrieve the `id` column from the `orders` table, the `name` column from the `customers` table, and the `name` column from the `products` table, where the `customer_id` and `product_id` columns in the `orders` table match
+</details>
+<details>
+<summary>What are subqueries</summary>
+<br>
+
+A subquery is a query within a query. In MySQL, you can use subqueries to retrieve data based on the results of another query. For example:
+  
+```sql
+SELECT *
+FROM mytable
+WHERE id IN (
+  SELECT mytable_id
+  FROM othertable
+);
+```
+  
+This will retrieve all rows from `mytable` where the `id` column matches any of the values returned by the subquery.
+</details>
+<details>
+<summary>What are JOIN and UNION</summary>
+<br>
+
+MySQL provides a wide range of built-in functions that you can use to manipulate data. Some common functions include `COUNT`, `SUM`, `MAX`, `MIN`, `AVG`, `UPPER`, `LOWER`, `CONCAT`, `SUBSTRING`, `DATE_FORMAT`, and `NOW`. For example:
+  
+```sql
+SELECT COUNT(*) FROM mytable; -- Returns the number of rows in the table
+SELECT SUM(amount) FROM mytable WHERE date BETWEEN '2022-01-01' AND '2022-12-31'; -- Returns the sum of the amount column for rows where the date is within a specific range
+SELECT CONCAT(firstname, ' ', lastname) FROM mytable; -- Returns a string that concatenates the firstname and lastname columns
+SELECT DATE_FORMAT(date, '%Y-%m-%d') FROM mytable; -- Returns the date column formatted as YYYY-MM-DD
+```
+  
+These are just a few examples of the many functions available in MySQL. You can find more information about MySQL functions in the MySQL documentation.
+</details>
+
+--------------------
+
+### [Python - Object-relational mapping](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x0F-python-object_relational_mapping)
+#### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
+
+<details>
+<summary>How to connect to a MySQL database from a Python script</summary>
+<br>
+
+To connect to a MySQL database from a Python script, you can use the `mysql-connector-python` module. Here's an example of how to connect:
+  
+```python
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  password="yourpassword",
+  database="yourdatabase"
+)
+
+print(mydb)
+```
+  
+Replace `yourusername`, `yourpassword`, and `yourdatabase` with your own credentials.
+</details>
+<details>
+<summary>How to SELECT rows in a MySQL table from a Python script</summary>
+<br>
+
+To SELECT rows in a MySQL table from a Python script, you can use the `execute()` method of the `cursor` object. Here's an example:
+  
+```python
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  password="yourpassword",
+  database="yourdatabase"
+)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("SELECT * FROM customers")
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+  print(x)
+```
+  
+This example selects all rows from the `customers` table and prints them.
+</details>
+<details>
+<summary>How to INSERT rows in a MySQL table from a Python script</summary>
+<br>
+
+To INSERT rows in a MySQL table from a Python script, you can use the `execute()` method with a parameterized query. Here's an example:
+  
+```python
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  password="yourpassword",
+  database="yourdatabase"
+)
+
+mycursor = mydb.cursor()
+
+sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
+val = ("John", "Highway 21")
+
+mycursor.execute(sql, val)
+
+mydb.commit()
+
+print(mycursor.rowcount, "record inserted.")
+```
+  
+This example inserts a new row into the `customers` table with the name "John" and the address "Highway 21".
+
+</details>
+<details>
+<summary>What ORM means</summary>
+<br>
+
+>ORM stands for Object-Relational Mapping. It's a technique for mapping database tables to objects in an object-oriented programming language like Python. ORM frameworks provide an abstraction layer that allows developers to work with databases using objects and methods rather than SQL queries.
+
+</details>
+<details>
+<summary>How to map a Python Class to a MySQL table</summary>
+<br>
+
+To map a Python class to a MySQL table, you can use an ORM framework like SQLAlchemy. Here's an example:
+  
+```python
+from sqlalchemy import create_engine, Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+engine = create_engine('mysql+mysqlconnector://yourusername:yourpassword@localhost/yourdatabase')
+Base = declarative_base()
+
+class Customer(Base):
+    __tablename__ = 'customers'
+    id = Column(Integer, primary_key=True)
+    name = Column(String(255))
+    address = Column(String(255))
+
+Base.metadata.create_all(engine)
+
+Session = sessionmaker(bind=engine)
+session = Session()
+
+new_customer = Customer(name='John', address='Highway 21')
+session.add(new_customer)
+session.commit()
+
+customers = session.query(Customer).all()
+for customer in customers:
+    print(customer.id, customer.name, customer.address)
+```
+  
+This example defines a `Customer` class that maps to the `customers` table in the MySQL database. It creates a new customer and inserts it into the database using the `session` object. Finally, it queries all customers from the database and prints their information.
+</details>
+
+----------------------
+
 ## Author
 
 - Mathieu Morel
