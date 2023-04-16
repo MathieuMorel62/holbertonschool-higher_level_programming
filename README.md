@@ -2022,6 +2022,405 @@ This example defines a `Customer` class that maps to the `customers` table in th
 
 ----------------------
 
+<img src="https://coursdetechno.amazony.fr/wp-content/uploads/2022/01/javascript.jpg" width="100%">
+
+## JavaScript
+  
+**JavaScript** is a high-level, interpreted, and multi-paradigm programming language. It was initially created to add interactivity to web pages, but it is now used to create web applications, servers, mobile applications, video games, desktop software, and much more. It was created in 1995 by Brendan Eich and has become one of the most popular programming languages in the world.
+
+### Features
+JavaScript is a dynamic and flexible language, with the following features:
+  
+- `Dynamic typing`: variables do not need to be declared with a specific type, and can change type during program execution.
+- `First-class functions`: functions can be passed as parameters, returned as values, and stored in variables.
+- `Object-oriented`: JavaScript supports object-oriented programming, although in a different way than languages such as Java or C++.
+- `Asynchronous`: JavaScript is designed to handle asynchronous operations, which are operations that can occur in the background without blocking program execution.
+- `Easy to learn`: JavaScript is a relatively simple and easy-to-learn language for beginners.
+
+### Uses
+JavaScript is mainly used for:
+  
+- Creating interactive and dynamic web applications.
+- Creating hybrid mobile applications.
+- Creating video games.
+- Creating desktop software.
+- Creating server-side applications.
+
+### Popular Frameworks
+There are many popular frameworks for JavaScript, including:
+
+- `React`: a library for building user interfaces.
+- `Angular`: a framework for building web applications.
+- `Node.js`: a platform for running JavaScript applications on the server-side.
+- `Vue.js`: a framework for building user interfaces.
+
+### Conclusion
+JavaScript is a versatile and popular programming language that is widely used to develop web applications, mobile applications, video games, desktop software, and much more. With many frameworks and libraries available, JavaScript is an important skill for web developers.
+
+-------------------
+
+## Projects
+
+### [JavaScript - Warm up](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x10-javascript-warm_up)
+
+#### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
+
+<details>
+<summary>Why JavaScript programming is amazing</summary>
+<br>
+
+>JavaScript is an amazing programming language for a number of reasons. Firstly, it is widely used in web development, which means that it has a huge community of developers and resources available online. Secondly, it is a versatile language that can be used both on the client-side and server-side of web applications. Finally, JavaScript has a wide range of frameworks and libraries available that make it easier to build complex web applications.
+</details>
+<details>
+<summary>How to run a JavaScript script</summary>
+<br>
+
+>To run a JavaScript script, you need a JavaScript engine or a web browser. You can create a JavaScript file with a .js extension and run it in a web browser or by using Node.js on the command line.
+</details>
+<details>
+<summary>How to create variables and constants</summary>
+<br>
+
+>You can create variables in JavaScript using the `var`, `let`, or `const` keywords. `var` is the old way of creating variables, while `let` and `const` were introduced in ES6. Constants are declared using the `const` keyword and cannot be reassigned a new value once they have been initialized.
+</details>
+<details>
+<summary>What are the differences between var, const, and let</summary>
+<br>
+
+>The main difference between `var`, `const`, and `let` is in their scoping. `var` has function-level scoping, while `let` and `const` have block-level scoping. `const` cannot be reassigned a new value once it has been initialized, while `let` can be reassigned.
+</details>
+<details>
+<summary>What are all the data types available in JavaScript</summary>
+<br>
+
+>JavaScript has six primitive data types: `string`, `number`, `boolean`, `null`, `undefined`, and `symbol`. It also has one non-primitive data type, `object`.
+</details>
+<details>
+<summary>How to use the if, if ... else statements</summary>
+<br>
+
+>You can use the `if` statement to test a condition and execute code if the condition is true. You can also use the `if...else` statement to execute code if the condition is false.
+
+```javascript
+if (condition) {
+  // code to be executed if the condition is true
+} else {
+  // code to be executed if the condition is false
+}
+```
+</details>
+<details>
+<summary>How to use comments</summary>
+<br>
+
+>You can use single-line comments with `//`, or multi-line comments with `/*...*/`.
+
+```javascript
+// This is a single-line comment
+
+/*
+This is a
+multi-line comment
+*/
+```
+</details>
+<details>
+<summary>How to assign values to variables</summary>
+<br>
+
+>You can assign values to variables using the `=` operator.
+
+```javascript
+let myVariable = 'hello';
+```
+</details>
+<details>
+<summary>How to use while and for loops</summary>
+<br>
+
+>You can use a while loop to execute code repeatedly while a condition is true. You can use a for loop to execute code a specific number of times.
+
+```javascript
+let i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+```
+</details>
+<details>
+<summary>How to use break and continue statements</summary>
+<br>
+
+>You can use the break statement to exit a loop early, and the continue statement to skip to the next iteration of a loop.
+
+```javascript
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    break;
+  }
+  console.log(i);
+}
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    continue;
+  }
+  console.log(i);
+}
+```
+</details>
+<details>
+<summary>What is a function and how do you use functions</summary>
+<br>
+
+>A function is a block of code that performs a specific task. You can define a function using the `function` keyword, followed by a name for the function, and a set of parentheses that may contain parameters. The code inside the function is enclosed in curly braces `{}`.
+
+```javascript
+function myFunction(parameter1, parameter2) {
+  // code to be executed
+  return result;
+}
+
+// calling a function
+myFunction(argument1, argument2);
+```
+</details>
+<details>
+<summary>What does a function that does not use any return statement return</summary>
+<br>
+
+>If a function doesn't use a return statement, it returns `undefined`.
+
+```javascript
+function myFunction() {
+  console.log('Hello!');
+}
+
+const result = myFunction(); 
+
+// returns undefined
+```
+</details>
+<details>
+<summary>Scope of variables</summary>
+<br>
+
+>The scope of a variable refers to the part of the code where the variable can be accessed. Variables declared inside a function have function-level scope, while variables declared outside a function have global scope.
+
+```javascript
+let myVariable = 'global'; // global scope
+
+function myFunction() {
+  let myVariable = 'local'; // function-level scope
+  console.log(myVariable); // logs 'local'
+}
+
+console.log(myVariable); // logs 'global'
+```
+</details>
+<details>
+<summary>What are the arithmetic operators and how to use them</summary>
+<br>
+
+>JavaScript has several arithmetic operators, including `+`, `-`, `*`, `/`, `%`, and `**` (exponentiation). You can use these operators to perform mathematical calculations.
+
+```javascript
+let x = 5;
+let y = 2;
+
+console.log(x + y); // logs 7
+console.log(x - y); // logs 3
+console.log(x * y); // logs 10
+console.log(x / y); // logs 2.5
+console.log(x % y); // logs 1
+console.log(x ** y); // logs 25
+```
+</details>
+<details>
+<summary>How to manipulate a dictionary</summary>
+<br>
+
+>In JavaScript, dictionaries are called objects. You can create an object using curly braces `{}` and define its properties using key-value pairs.
+
+```javascript
+const myObject = {
+  key1: 'value1',
+  key2: 'value2',
+  key3: 'value3'
+};
+
+// accessing object properties
+console.log(myObject.key1); // logs 'value1'
+
+// adding a new property
+myObject.key4 = 'value4';
+
+// updating an existing property
+myObject.key1 = 'new value';
+
+// deleting a property
+delete myObject.key2;
+```
+</details>
+<details>
+<summary>How to import a file</summary>
+<br>
+
+>In JavaScript, you can use the `import` statement to import functions or variables from other files.
+
+```javascript
+// in file1.js
+export function myFunction() {
+  // code to be executed
+}
+
+// in file2.js
+import { myFunction } from './file1.js';
+
+myFunction(); // calls the imported function
+```
+</details>
+
+----------------------
+
+### [JavaScript - Objects, Scopes and Closure](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x11-javascript_objects_scopes_closures)
+
+#### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
+
+<details>
+<summary>Why JavaScript programming is amazing</summary>
+<br>
+
+>JavaScript is an amazing programming language for several reasons. Firstly, it is a versatile language that can be used for both front-end and back-end web development. Secondly, it has a large community of developers and resources available online. Thirdly, it has a wide range of frameworks and libraries available that make it easier to build complex applications. Finally, it is constantly evolving and improving, with new features and updates being added on a regular basis.
+</details>
+<details>
+<summary>How to create an object in JavaScript</summary>
+<br>
+
+In JavaScript, you can create an object using curly braces `{}` and defining its properties using key-value pairs.
+
+```javascript
+const myObject = {
+  key1: 'value1',
+  key2: 'value2'
+};
+```
+
+You can also create an object using the `Object` constructor.
+
+```javascript
+const myObject = new Object();
+myObject.key1 = 'value1';
+myObject.key2 = 'value2';
+```
+</details>
+<details>
+<summary>What "this" means</summary>
+<br>
+
+>In JavaScript, the `this` keyword refers to the object that the code is currently executing in. It is a way to refer to the current object within a method or function.
+
+```javascript
+const myObject = {
+  myMethod() {
+    console.log(this); // logs the object
+  }
+};
+
+myObject.myMethod(); // calls the method and logs the object
+```
+</details>
+<details>
+<summary>What "undefined" means</summary>
+<br>
+
+>In JavaScript, `undefined` is a primitive data type that represents the absence of a value. It is the default value of a variable that has been declared but not assigned a value.
+
+```javascript
+let myVariable;
+console.log(myVariable); // logs undefined
+```
+</details>
+<details>
+<summary>Why variable type and scope is important</summary>
+<br>
+
+>Variable type and scope are important because they determine how and where a variable can be accessed. The type of a variable determines what kind of data it can store, while the scope of a variable determines where it can be accessed within the code.
+</details>
+<details>
+<summary>What is a closure</summary>
+<br>
+
+>A closure is a function that has access to variables in its outer function, even after the outer function has returned. It allows for encapsulation of variables and functions, and can be used to create private variables and methods.
+
+```javascript
+function outerFunction() {
+  const myVariable = 'hello';
+
+  function innerFunction() {
+    console.log(myVariable); // logs 'hello'
+  }
+
+  return innerFunction;
+}
+
+const myFunction = outerFunction();
+myFunction(); // calls the inner function and logs 'hello'
+```
+</details>
+<details>
+<summary>What is a prototype</summary>
+<br>
+
+>In JavaScript, every object has a prototype, which is a reference to another object that it inherits properties and methods from. You can add new properties and methods to an object's prototype, and they will be available to all instances of that object.
+
+```javascript
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.sayHello = function() {
+  console.log(`Hello, my name is ${this.name}.`);
+}
+
+const person1 = new Person('John');
+person1.sayHello(); // logs 'Hello, my name is John.'
+```
+</details>
+<details>
+<summary>How to inherit an object from another</summary>
+<br>
+
+>In JavaScript, you can inherit properties and methods from another object using the `Object.create()` method.
+
+```javascript
+const parentObject = {
+  parentMethod() {
+    console.log('This is a method from the parent object.');
+  }
+};
+
+const childObject = Object.create(parentObject);
+childObject.childMethod = function() {
+  console.log('This is a method from the child object.');
+};
+
+childObject.parentMethod(); // logs 'This is a method from the parent object.'
+childObject.childMethod(); // logs 'This is a method from the child object.'
+```
+</details>
+
+------------------
+
 ## Author
 
 - Mathieu Morel
