@@ -11,6 +11,4 @@ fs.writeFile(filePath, content, 'utf8', function (err) {
     console.error(err);
     return;
   }
-
-  console.log(`The file ${filePath} has been saved!`);
 });
