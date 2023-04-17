@@ -4,6 +4,7 @@
 const request = require('request');
 
 const starWarsFilmsApiUrl = process.argv[2];
+const CHARACTER_ID = '18';
 
 request(starWarsFilmsApiUrl, function (error, response, body) {
   if (error) {
@@ -14,7 +15,7 @@ request(starWarsFilmsApiUrl, function (error, response, body) {
 
     for (let i = 0; i < films.length; i++) {
       const characters = films[i].characters;
-      if (characters.includes('https://swapi-api.hbtn.io/api/people/18/')) {
+      if (characters.includes(`https://swapi-api.hbtn.io/api/people/${CHARACTER_ID}/`)) {
         count++;
       }
     }
