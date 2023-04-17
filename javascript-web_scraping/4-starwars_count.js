@@ -4,6 +4,7 @@
 const request = require('request');
 
 const starWarsFilmsApiUrl = process.argv[2];
+const antillesCharacterId = 18;
 
 request(starWarsFilmsApiUrl, function (error, response, body) {
   if (error) {
@@ -14,7 +15,7 @@ request(starWarsFilmsApiUrl, function (error, response, body) {
 
   const wedgeAntillesFilms = films.filter(function (film) {
     const charactersUrl = film.characters;
-    const wedgeAntilleUrl = 'https://swapi-api.hbtn.io/api/people/18/';
+    const wedgeAntilleUrl = `https://swapi-api.hbtn.io/api/people/${antillesCharacterId}/`;
     const wedgeAntillesIsPresent = charactersUrl.includes(wedgeAntilleUrl);
     return wedgeAntillesIsPresent;
   });
