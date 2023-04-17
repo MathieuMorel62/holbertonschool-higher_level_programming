@@ -3,7 +3,7 @@
 
 const request = require('request');
 
-const starWarsFilmsApiUrl = 'https://swapi-api.hbtn.io/api/films/';
+const starWarsFilmsApiUrl = process.argv[2];
 
 request(starWarsFilmsApiUrl, function (error, response, body) {
   if (error) {
@@ -15,8 +15,10 @@ request(starWarsFilmsApiUrl, function (error, response, body) {
   const wedgeAntillesFilms = films.filter(function (film) {
     const charactersUrl = film.characters;
     const wedgeAntilleUrl = 'https://swapi-api.hbtn.io/api/people/18/';
-    return charactersUrl.includes(wedgeAntilleUrl);
+    const wedgeAntillesIsPresent = charactersUrl.includes(wedgeAntilleUrl);
+    return wedgeAntillesIsPresent;
   });
 
-  console.log(wedgeAntillesFilms.length);
+  const numberOfWedgeAntillesFilms = wedgeAntillesFilms.length;
+  console.log(numberOfWedgeAntillesFilms);
 });
