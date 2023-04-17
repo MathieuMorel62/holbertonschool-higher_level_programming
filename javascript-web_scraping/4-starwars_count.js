@@ -9,16 +9,15 @@ const CHARACTER_ID = '18';
 request(starWarsFilmsApiUrl, function (error, response, body) {
   if (error) {
     console.error(error);
-  } else {
-    const films = JSON.parse(body).results;
-    let count = 0;
-
-    for (let i = 0; i < films.length; i++) {
-      const characters = films[i].characters;
-      if (characters.includes(`https://swapi-api.hbtn.io/api/people/${CHARACTER_ID}/`)) {
-        count++;
-      }
-    }
-    console.log(count);
+    return;
   }
+
+  const films = JSON.parse(body).results;
+  const filmsWithCharacter = films.filter(film => {
+    const characters = film.characters;
+    return characters.some(character => character.includes(`/api/people/${CHARACTER_ID}/`));
+  });
+
+  const count = filmsWithCharacter.length;
+  console.log(count);
 });
