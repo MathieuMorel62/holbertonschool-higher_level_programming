@@ -12,12 +12,12 @@ request(starWarsFilmsApiUrl, function (error, response, body) {
     const films = JSON.parse(body).results;
     let count = 0;
 
-    films.forEach(film => {
-      const characters = film.characters;
+    for (let i = 0; i < films.length; i++) {
+      const characters = films[i].characters;
       if (characters.includes('https://swapi-api.hbtn.io/api/people/18/')) {
         count++;
       }
-    });
+    }
     console.log(count);
   }
 });
