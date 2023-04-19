@@ -2421,6 +2421,139 @@ childObject.childMethod(); // logs 'This is a method from the child object.'
 
 ------------------
 
-## Author
+### [Javascript - Web Scraping](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x12-javascript-web_scraping)
+
+#### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
+
+<details>
+<summary>How to manipulate JSON data</summary>
+<br>
+
+Manipulating JSON data:
+   
+- Parsing a JSON string using JSON.parse() and converting JavaScript objects to JSON strings using JSON.stringify().
+   
+Examples:
+
+```js
+// Parsing a JSON string
+const jsonString = '{"name": "John", "age": 30, "city": "New York"}';
+const obj = JSON.parse(jsonString);
+console.log(obj.name); // Output: John
+console.log(obj.age); // Output: 30
+console.log(obj.city); // Output: New York
+
+// Converting a JavaScript object to a JSON string
+const obj = {name: "John", age: 30, city: "New York"};
+const jsonString = JSON.stringify(obj);
+console.log(jsonString); // Output: {"name":"John","age":30,"city":"New York"}
+```
+</details>
+<details>
+<summary>How to use `request` and fetch API</summary>
+<br>
+
+Using request and fetch API:
+   
+- Making HTTP requests to external APIs and receiving responses.
+- Request is a popular Node.js library for making HTTP requests, while fetch is a web API used to fetch resources asynchronously across the network.
+   
+Examples:
+
+```js
+// Using request to make a GET request
+const request = require('request');
+
+request.get('https://jsonplaceholder.typicode.com/todos/1', (error, response, body) => {
+  if (error) {
+    console.error(error);
+    return;
+  }
+  console.log(body);
+});
+
+// Using fetch to make a GET request
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+```
+</details>
+<details>
+<summary>How to read and write a file using `fs` module</summary>
+<br>
+
+Reading and writing files using the fs module:
+  
+- Using functions such as `fs.readFile()`, `fs.writeFile()`, `fs.readFileSync()`, and `fs.writeFileSync()`.
+- These functions allow you to read and write files synchronously or asynchronously, depending on your needs.
+  
+Examples:
+
+```js
+// Reading a file asynchronously
+const fs = require('fs');
+
+fs.readFile('example.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(data);
+});
+
+// Writing to a file asynchronously
+const fs = require('fs');
+
+fs.writeFile('example.txt', 'This is an example text.', err => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log('File written successfully!');
+});
+
+// Reading a file synchronously
+const fs = require('fs');
+
+try {
+  const data = fs.readFileSync('example.txt', 'utf8');
+  console.log(data);
+} catch (err) {
+  console.error(err);
+}
+
+// Writing to a file synchronously
+const fs = require('fs');
+
+try {
+  fs.writeFileSync('example.txt', 'This is an example text.');
+  console.log('File written successfully!');
+} catch (err) {
+  console.error(err);
+}
+```
+</details>
+
+------------------
+
+### [JavaScript - Web jQuery](https://github.com/MathieuMorel62/holbertonschool-higher_level_programming/tree/main/0x13-javascript-web_jquery)
+
+#### `General`
+
+At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
+
+<details>
+<summary></summary>
+<br>
+
+>
+</details>
+
+--------------------
+
+## 👤 Author 👤
 
 - Mathieu Morel
