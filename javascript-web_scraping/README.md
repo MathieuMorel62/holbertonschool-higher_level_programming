@@ -275,7 +275,7 @@ Write a script that prints all characters of a Star Wars movie:
 <br>
 
 ```js
-guillaume@ubuntu:~/$ ./101-starwars_characters.js 3
+mathieu@ubuntu:~/$ ./101-starwars_characters.js 3
 Luke Skywalker
 C-3PO
 R2-D2
