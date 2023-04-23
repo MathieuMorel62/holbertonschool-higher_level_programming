@@ -2546,10 +2546,91 @@ try {
 At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
 
 <details>
-<summary></summary>
+<summary>Why JQuery make front-end programming so easy</summary>
 <br>
 
->
+>JQuery makes front-end programming easier by simplifying complex tasks such as DOM manipulation, event handling, and Ajax requests. It provides a simplified syntax and powerful features that allow developers to write more efficient and concise code.
+</details>
+<details>
+<summary>How to select HTML elements in JavaScript</summary>
+<br>
+
+>In JavaScript, you can select HTML elements using the `document.getElementById()`, `document.getElementsByClassName()`, `document.getElementsByTagName()`, and `document.querySelector()` methods.
+</details>
+<details>
+<summary>How to select HTML elements with JQuery</summary>
+<br>
+
+>In JQuery, you can select HTML elements using the `$()` or `jQuery()` function, followed by a CSS selector. For example, `$('#myElement')` selects the element with ID "myElement", and `$('.myClass')` selects all elements with class "myClass".
+</details>
+<details>
+<summary>What are the differences between ID, class, and tag name selectors</summary>
+<br>
+
+>ID selectors select an element with a specific ID attribute, class selectors select all elements with a specific class attribute, and tag name selectors select all elements of a specific tag name.
+</details>
+<details>
+<summary>How to modify an HTML element style</summary>
+<br>
+
+>In JavaScript, you can modify an HTML element style using the `element.style.property` syntax. In JQuery, you can use the css() method. For example, `$('#myElement').css('color', 'red')` changes the text color of the element with ID "myElement" to red.
+</details>
+<details>
+<summary>How to get and update an HTML element content</summary>
+<br>
+
+>In JavaScript, you can get an HTML element content using the `element.innerHTML` property, and update it using the same property. In JQuery, you can use the `html()` method. For example, `$('#myElement').html('New content')` sets the content of the element with ID "myElement" to "New content".
+</details>
+<details>
+<summary>How to modify the DOM</summary>
+<br>
+
+>In JavaScript, you can modify the DOM using the `createElement()`, `appendChild()`, and `removeChild()` methods. In JQuery, you can use the `append()`, `prepend()`, and `remove()` methods to modify the DOM.
+</details>
+<details>
+<summary>How to make a GET request with JQuery Ajax</summary>
+<br>
+
+>In JQuery, you can use the `$.ajax()` method to make GET requests. For example,
+
+```js
+$.ajax({
+  url: 'https://example.com/data',
+  method: 'GET',
+  success: function(data) {
+    console.log(data);
+  }
+});
+```
+</details>
+<details>
+<summary>How to make a POST request with JQuery Ajax</summary>
+<br>
+
+>In JQuery, you can use the `$.ajax()` method to make POST requests. For example,
+
+```js
+$.ajax({
+  url: 'https://example.com/data',
+  method: 'POST',
+  data: { key1: 'value1', key2: 'value2' },
+  success: function(response) {
+    console.log(response);
+  }
+});
+```
+</details>
+<details>
+<summary>How to listen/bind to DOM events</summary>
+<br>
+
+>In JavaScript, you can use the `addEventListener()` method to listen to DOM events. In JQuery, you can use the `on()` method. For example, `$('#myElement').on('click', function() { alert('Clicked!'); });` binds a click event listener to the element with ID "myElement".
+</details>
+<details>
+<summary>How to listen/bind to user events</summary>
+<br>
+
+>In JavaScript, you can listen to user events such as mouse clicks and keyboard input using event listeners. In JQuery, you can use the `on()` method to bind event listeners to HTML
 </details>
 
 --------------------
